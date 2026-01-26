@@ -27,13 +27,29 @@
             background: linear-gradient(145deg, #1f2229, #15171d);
             border: 1px solid #2d3139;
             box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
-            transition: all 0.2s ease-in-out;
+            transition: 
+                transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                opacity 0.5s ease-in-out,
+                box-shadow 0.2s ease-in-out,
+                border-color 0.2s ease-in-out;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .card-palimpsesto.visivel {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .card-palimpsesto:hover {
             border-color: var(--cor-detalhe);
-            transform: translate(-2px, -2px);
-            box-shadow: 7px 7px 0px var(--cor-detalhe);
+            transform: translateY(-5px); /* Efeito de levantar um pouco */
+            box-shadow: 10px 10px 0px var(--cor-detalhe);
+        }
+
+        /* Mantém o hover estável após a animação de entrada */
+        .card-palimpsesto.visivel:hover {
+            transform: translateY(-5px);
         }
 
         .instrucao-box {
@@ -57,9 +73,18 @@
             <h1 class="fonte-terminal text-6xl font-bold text-amber-600 mb-2 tracking-tighter uppercase">Palimpsesto</h1>
             <p class="text-gray-500 italic text-sm tracking-widest uppercase">Motor Narrativo Ideológico e Psicológico</p>
 
-            <button onclick="gerarTrama()" class="mt-10 px-10 py-4 bg-amber-700 hover:bg-amber-600 text-white font-bold rounded-sm border-b-4 border-amber-900 active:border-b-0 active:translate-y-1 transition-all uppercase tracking-tighter">
-                Sondar a Realidade (Sortear)
-            </button>
+            <div class="flex justify-center items-center gap-4 mt-10">
+                <button onclick="gerarTrama()" class="px-10 py-4 bg-amber-700 hover:bg-amber-600 text-white font-bold rounded-sm border-b-4 border-amber-900 active:border-b-0 active:translate-y-1 transition-all uppercase tracking-tighter">
+                    Sondar a Realidade (Sortear)
+                </button>
+                <button id="btnCopiar" onclick="copiarRelatorio()" class="hidden px-6 py-2 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded-sm border-b-4 border-gray-900 active:border-b-0 active:translate-y-1 transition-all uppercase tracking-tighter text-xs">
+                    Consolidar Relatório
+                </button>
+            </div>
+
+            <div id="botoesSorteioRapido" class="hidden justify-center items-center gap-2 mt-4">
+                <!-- Botões de sorteio rápido serão inseridos aqui pelo script -->
+            </div>
         </header>
 
         <div id="tabuleiro" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -71,8 +96,16 @@
 
     <script>
         let baseDeDados = {};
+        let cartasSorteadas = [];
+        // Mapeamento das chaves do seu JSON. Movido para o escopo global para ser acessível.
+        const configuracao = [
+            { chave: 'deck_vozes_atuacao', label: 'Voz de Atuação' },
+            { chave: 'deck_cicatrizes_ideologicas', label: 'Cicatriz Ideológica' },
+            { chave: 'deck_tecido_mundo', label: 'Tecido do Mundo' },
+            { chave: 'deck_rupturas_percurso', label: 'Ruptura de Percurso' }
+        ];
 
-        // Carrega o arquivo unificado pelo seu Python
+        // Carrega o arquivo unificado
         async function carregarDecks() {
             try {
                 const response = await fetch('./data/decks_master.json');
@@ -87,48 +120,113 @@
 
         function gerarTrama() {
             const container = document.getElementById('tabuleiro');
-            container.innerHTML = ''; // Limpa o sorteio anterior
+            const btnCopiar = document.getElementById('btnCopiar');
+            const botoesRapidosContainer = document.getElementById('botoesSorteioRapido');
 
-            // Mapeamento das chaves do seu JSON
-            const configuracao = [
-                { chave: 'deck_vozes_atuacao', label: 'Voz de Atuação' },
-                { chave: 'deck_cicatrizes_ideologicas', label: 'Cicatriz Ideológica' },
-                { chave: 'deck_tecido_mundo', label: 'Tecido do Mundo' },
-                { chave: 'deck_rupturas_percurso', label: 'Ruptura de Percurso' }
-            ];
+            container.innerHTML = '';
+            botoesRapidosContainer.innerHTML = '';
+            cartasSorteadas = [];
 
-            configuracao.forEach(config => {
+            const cardElements = [];
+            configuracao.forEach((config, index) => {
                 const deck = baseDeDados[config.chave];
                 if (deck && deck.length > 0) {
                     const carta = deck[Math.floor(Math.random() * deck.length)];
-                    container.appendChild(criarCard(carta, config.label));
+                    cartasSorteadas.push({ ...carta, categoria: config.label });
+                    const cardElement = criarCard(carta, config.label, index);
+                    container.appendChild(cardElement);
+                    cardElements.push(cardElement);
+
+                    const btnRapido = document.createElement('button');
+                    btnRapido.className = 'px-3 py-1 bg-gray-800 hover:bg-amber-700 text-gray-300 hover:text-white font-semibold rounded-sm border-b-2 border-gray-900 hover:border-amber-900 active:border-b-0 active:translate-y-px transition-all uppercase tracking-tighter text-[10px]';
+                    btnRapido.innerHTML = `↻ ${config.label.split(' ')[0]}`;
+                    btnRapido.title = `Sorteio Rápido: ${config.label}`;
+                    btnRapido.onclick = () => sortearCartaUnica(index);
+                    botoesRapidosContainer.appendChild(btnRapido);
                 }
             });
+
+            btnCopiar.classList.remove('hidden');
+            botoesRapidosContainer.classList.remove('hidden');
+            botoesRapidosContainer.classList.add('flex');
+
+            setTimeout(() => {
+                cardElements.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.classList.add('visivel');
+                    }, index * 100);
+                });
+            }, 50);
+        }
+        
+        function sortearCartaUnica(deckIndex) {
+            const config = configuracao[deckIndex];
+            const deck = baseDeDados[config.chave];
+            if (!deck || deck.length === 0) return;
+
+            const novaCarta = deck[Math.floor(Math.random() * deck.length)];
+            cartasSorteadas[deckIndex] = { ...novaCarta, categoria: config.label };
+
+            const cardElement = document.getElementById(`card-${deckIndex}`);
+            if (!cardElement) return;
+
+            cardElement.classList.remove('visivel');
+
+            setTimeout(() => {
+                const novoConteudo = criarCard(novaCarta, config.label, deckIndex);
+                cardElement.innerHTML = novoConteudo.innerHTML;
+                setTimeout(() => {
+                    cardElement.classList.add('visivel');
+                }, 50);
+            }, 550);
         }
 
-        function criarCard(carta, categoria) {
+        function criarCard(carta, categoria, index) {
             const div = document.createElement('div');
+            if (index !== undefined) {
+                div.id = `card-${index}`;
+            }
             div.className = 'card-palimpsesto p-6 flex flex-col min-h-[400px]';
-
             div.innerHTML = `
                 <span class="text-[10px] font-bold text-amber-700 tracking-[0.3em] uppercase mb-4">${categoria}</span>
                 <h2 class="fonte-terminal text-2xl text-amber-100 mb-2">${carta.titulo}</h2>
                 <div class="text-[10px] text-gray-500 uppercase italic mb-4 border-b border-gray-800 pb-2">
                     Arquétipo: ${carta.arquetipo_vinculado}
                 </div>
-
-                <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">
-                    ${carta.descricao}
-                </p>
-
+                <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">${carta.descricao}</p>
                 <div class="instrucao-box p-4 mt-auto">
                     <h4 class="text-[10px] font-bold text-amber-600 uppercase mb-2">Instrução Narrativa</h4>
-                    <p class="text-xs text-gray-200 italic leading-snug">
-                        ${carta.instrucao_narrativa}
-                    </p>
+                    <p class="text-xs text-gray-200 italic leading-snug">${carta.instrucao_narrativa}</p>
                 </div>
             `;
             return div;
+        }
+
+        function copiarRelatorio() {
+            if (cartasSorteadas.length === 0) return;
+
+            let relatorioMarkdown = "# Sinopse da Trama\n\n";
+            cartasSorteadas.forEach(carta => {
+                relatorioMarkdown += `## ${carta.categoria}: ${carta.titulo}\n`;
+                relatorioMarkdown += `**Instrução:** *${carta.instrucao_narrativa}*\n\n`;
+            });
+
+            navigator.clipboard.writeText(relatorioMarkdown).then(() => {
+                const btn = document.getElementById('btnCopiar');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Copiado!';
+                btn.classList.add('bg-green-600', 'border-green-800');
+                btn.classList.remove('bg-gray-700', 'border-gray-900', 'hover:bg-gray-600');
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('bg-green-600', 'border-green-800');
+                    btn.classList.add('bg-gray-700', 'border-gray-900', 'hover:bg-gray-600');
+                }, 2000);
+            }).catch(err => {
+                console.error('Erro ao copiar:', err);
+                alert('Não foi possível copiar para a área de transferência.');
+            });
         }
 
         // Inicia o carregamento
