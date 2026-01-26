@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palimpsesto | Motor Narrativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cor-fundo: #0d0e12;
+            --cor-card: #1a1c23;
+            --cor-detalhe: #d97706; /* Amber-600 */
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: #d1d5db;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .fonte-terminal { font-family: 'Special Elite', cursive; }
+
+        /* Estética Disco Elysium / Miéville */
+        .card-palimpsesto {
+            background: linear-gradient(145deg, #1f2229, #15171d);
+            border: 1px solid #2d3139;
+            box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .card-palimpsesto:hover {
+            border-color: var(--cor-detalhe);
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px var(--cor-detalhe);
+        }
+
+        .instrucao-box {
+            background-color: rgba(217, 119, 6, 0.1);
+            border-left: 4px solid var(--cor-detalhe);
+        }
+
+        /* Efeito de ruído/textura no fundo */
+        .overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            opacity: 0.05; pointer-events: none; z-index: 50;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-4 md:p-12">
+    <div class="overlay"></div>
+
+    <div class="max-w-7xl w-full z-10">
+        <header class="text-center mb-16">
+            <h1 class="fonte-terminal text-6xl font-bold text-amber-600 mb-2 tracking-tighter uppercase">Palimpsesto</h1>
+            <p class="text-gray-500 italic text-sm tracking-widest uppercase">Motor Narrativo Ideológico e Psicológico</p>
+
+            <button onclick="gerarTrama()" class="mt-10 px-10 py-4 bg-amber-700 hover:bg-amber-600 text-white font-bold rounded-sm border-b-4 border-amber-900 active:border-b-0 active:translate-y-1 transition-all uppercase tracking-tighter">
+                Sondar a Realidade (Sortear)
+            </button>
+        </header>
+
+        <div id="tabuleiro" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="col-span-full text-center text-gray-600 italic">
+                Aguardando o primeiro sorteio...
+             </div>
+        </div>
+    </div>
+
+    <script>
+        let baseDeDados = {};
+
+        // Carrega o arquivo unificado pelo seu Python
+        async function carregarDecks() {
+            try {
+                const response = await fetch('./data/decks_master.json');
+                if (!response.ok) throw new Error("Não achei o decks_master.json");
+                baseDeDados = await response.json();
+                console.log("Mestre de Dados pronto.");
+            } catch (err) {
+                console.error("Erro fatal:", err);
+                document.getElementById('tabuleiro').innerHTML = `<p class="text-red-500 col-span-full">Erro: Rode o script Python primeiro para gerar o arquivo mestre.</p>`;
+            }
+        }
+
+        function gerarTrama() {
+            const container = document.getElementById('tabuleiro');
+            container.innerHTML = ''; // Limpa o sorteio anterior
+
+            // Mapeamento das chaves do seu JSON
+            const configuracao = [
+                { chave: 'deck_vozes_atuacao', label: 'Voz de Atuação' },
+                { chave: 'deck_cicatrizes_ideologicas', label: 'Cicatriz Ideológica' },
+                { chave: 'deck_tecido_mundo', label: 'Tecido do Mundo' },
+                { chave: 'deck_rupturas_percurso', label: 'Ruptura de Percurso' }
+            ];
+
+            configuracao.forEach(config => {
+                const deck = baseDeDados[config.chave];
+                if (deck && deck.length > 0) {
+                    const carta = deck[Math.floor(Math.random() * deck.length)];
+                    container.appendChild(criarCard(carta, config.label));
+                }
+            });
+        }
+
+        function criarCard(carta, categoria) {
+            const div = document.createElement('div');
+            div.className = 'card-palimpsesto p-6 flex flex-col min-h-[400px]';
+
+            div.innerHTML = `
+                <span class="text-[10px] font-bold text-amber-700 tracking-[0.3em] uppercase mb-4">${categoria}</span>
+                <h2 class="fonte-terminal text-2xl text-amber-100 mb-2">${carta.titulo}</h2>
+                <div class="text-[10px] text-gray-500 uppercase italic mb-4 border-b border-gray-800 pb-2">
+                    Arquétipo: ${carta.arquetipo_vinculado}
+                </div>
+
+                <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">
+                    ${carta.descricao}
+                </p>
+
+                <div class="instrucao-box p-4 mt-auto">
+                    <h4 class="text-[10px] font-bold text-amber-600 uppercase mb-2">Instrução Narrativa</h4>
+                    <p class="text-xs text-gray-200 italic leading-snug">
+                        ${carta.instrucao_narrativa}
+                    </p>
+                </div>
+            `;
+            return div;
+        }
+
+        // Inicia o carregamento
+        window.onload = carregarDecks;
+    </script>
+</body>
+</html>
