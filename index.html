@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palimpsesto | Motor Narrativo</title>
+    <title>Motor de Tramas | Dispositivo de Fricção Narrativa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -11,31 +11,43 @@
         :root {
             --cor-fundo: #0d0e12;
             --cor-card: #1a1c23;
-            --cor-detalhe: #d97706; /* Amber-600 */
+            --cor-detalhe: #d97706;
         }
 
         body {
             background-color: var(--cor-fundo);
             color: #d1d5db;
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
         }
 
         .fonte-terminal { font-family: 'Special Elite', cursive; }
 
+        #intro-section {
+            transition: all 0.6s ease-in-out;
+            max-height: 1000px;
+            opacity: 1;
+        }
+
+        .intro-escondida {
+            max-height: 0 !important;
+            opacity: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
         .card-palimpsesto {
             background: linear-gradient(145deg, #1f2229, #15171d);
             border: 1px solid #2d3139;
-            box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
-            transition: 
-                transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                opacity 0.5s ease-in-out,
-                box-shadow 0.2s ease-in-out,
-                border-color 0.2s ease-in-out;
+            box-shadow: 5px 5px 0px rgba(0,0,0,0.8);
+            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease-in-out;
             opacity: 0;
             transform: translateY(30px);
-            height: 520px;
             display: flex;
             flex-direction: column;
+            height: 100%;
         }
 
         .card-palimpsesto.visivel {
@@ -45,9 +57,41 @@
 
         .card-palimpsesto:hover {
             border-color: var(--cor-detalhe);
-            transform: translateY(-5px);
-            box-shadow: 10px 10px 0px var(--cor-detalhe);
+            transform: translateY(-8px);
+            box-shadow: 12px 12px 0px var(--cor-detalhe);
         }
+
+        .img-container {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            background-color: #000;
+            border: 1px solid #2d3139;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        /* --- MUDANÇAS NO CSS DAS IMAGENS --- */
+        .img-card-nanquim {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Estado padrão: Preto e Branco */
+            filter: grayscale(1) contrast(1.2) brightness(0.9);
+            /* Transição suave para a cor */
+            transition: filter 0.8s ease;
+        }
+
+        /* Estado Hover: Colorido quando passa o mouse (RESTAURADO) */
+        .card-palimpsesto:hover .img-card-nanquim {
+            filter: grayscale(0) contrast(1.1) brightness(1);
+            transition: filter 0.3s ease; /* Fica colorido rápido no hover */
+        }
+
+        /* Classe temporária para o flash colorido ao nascer */
+        .img-card-nanquim.flash-colorido {
+            filter: grayscale(0) contrast(1.1) brightness(1) !important;
+        }
+        /* ---------------------------------- */
 
         .instrucao-box {
             background-color: rgba(217, 119, 6, 0.1);
@@ -60,49 +104,50 @@
             opacity: 0.05; pointer-events: none; z-index: 50;
         }
 
-        .img-card {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border: 1px solid #2d3139;
-            border-radius: 3px;
-            background: #000;
-        }
-
-        .card-title {
-            height: 64px;
-            line-height: 1.25;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
+        .logo-home:hover {
+            color: #fff;
+            cursor: pointer;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center p-4 md:p-12">
+<body class="min-h-screen flex flex-col items-center p-4 md:p-12 text-justify md:text-left">
     <div class="overlay"></div>
 
     <div class="max-w-7xl w-full z-10">
-        <header class="text-center mb-16">
-            <h1 class="fonte-terminal text-6xl font-bold text-amber-600 mb-2 tracking-tighter uppercase">Palimpsesto</h1>
-            <p class="text-gray-500 italic text-sm tracking-widest uppercase">Motor Narrativo Ideológico e Psicológico</p>
+        <header class="text-center mb-12">
+            <h1 onclick="voltarHome()" class="logo-home fonte-terminal text-6xl md:text-7xl font-bold text-amber-600 mb-2 uppercase tracking-tighter drop-shadow-lg transition-colors">
+                Motor de Tramas
+            </h1>
+            
+            <div id="intro-section" class="max-w-4xl mx-auto mt-10 p-8 border-l-4 border-amber-700 bg-black/40">
+                <p class="text-amber-600 font-bold uppercase text-xs tracking-[0.4em] mb-6">Dispositivo de Fricção Narrativa</p>
+                <div class="text-gray-300 text-lg md:text-xl leading-relaxed space-y-6 fonte-terminal">
+                    <p>
+                        O <span class="text-white">Motor de Tramas</span> é um sistema de suporte à criação literária desenvolvido para subverter o bloqueio criativo e expandir as fronteiras do enredo. Composto por 104 lâminas originais em nanquim, este projeto funciona como um <span class="text-amber-500 italic">gatilho narrativo</span> para destravar cenas estagnadas e refinar a profundidade dos seus personagens.
+                    </p>
+                    <p>
+                        Ao "Sondar a Realidade", você acessa uma lógica de colisão dividida em quatro camadas fundamentais: as <strong>Vozes de Atuação</strong>, as <strong>Cicatrizes Ideológicas</strong>, o <strong>Tecido do Mundo</strong> e as <strong>Rupturas de Percurso</strong>. 
+                    </p>
+                    <p>
+                        Este não é um gerador de respostas prontas, mas um <span class="text-white">sabotador de inércia</span>. Use-o para injetar ruído, conflito e novas perspectivas em roteiros, contos ou qualquer estrutura de história que precise de um novo fôlego.
+                    </p>
+                </div>
+            </div>
 
-            <div class="flex justify-center items-center gap-4 mt-10">
-                <button onclick="gerarTrama()" class="px-10 py-4 bg-amber-700 hover:bg-amber-600 text-white font-bold rounded-sm border-b-4 border-amber-900 active:border-b-0 active:translate-y-1 transition-all uppercase tracking-tighter">
-                    Sondar a Realidade (Sortear)
+            <div class="flex justify-center items-center gap-4 mt-12">
+                <button onclick="gerarTrama()" class="px-10 py-5 bg-amber-700 hover:bg-amber-600 text-white font-bold rounded-sm border-b-4 border-amber-900 active:translate-y-1 transition-all uppercase tracking-tighter text-xl shadow-2xl">
+                    Sondar a Realidade
                 </button>
-                <button id="btnCopiar" onclick="copiarRelatorio()" class="hidden px-6 py-2 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded-sm border-b-4 border-gray-900 active:border-b-0 active:translate-y-1 transition-all uppercase tracking-tighter text-xs">
-                    Consolidar Relatório
+                <button id="btnCopiar" onclick="copiarRelatorio()" class="hidden px-6 py-2 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded-sm border-b-4 border-gray-900 active:translate-y-1 transition-all uppercase tracking-tighter text-xs">
+                    Consolidar Relatório (MD)
                 </button>
             </div>
 
-            <div id="botoesSorteioRapido" class="hidden justify-center items-center gap-2 mt-4"></div>
+            <div id="botoesSorteioRapido" class="hidden justify-center items-center flex-wrap gap-2 mt-8">
+            </div>
         </header>
 
         <div id="tabuleiro" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="col-span-full text-center text-gray-600 italic">
-                Aguardando o primeiro sorteio...
-             </div>
         </div>
     </div>
 
@@ -119,101 +164,118 @@
         async function carregarDecks() {
             try {
                 const response = await fetch('./data/decks_master.json');
-                if (!response.ok) throw new Error("Não achei o decks_master.json");
                 baseDeDados = await response.json();
             } catch (err) {
-                console.error("Erro fatal:", err);
+                console.error("Falha no sistema de dados:", err);
+            }
+        }
+
+        function voltarHome() {
+            const intro = document.getElementById('intro-section');
+            const container = document.getElementById('tabuleiro');
+            const btnCopiar = document.getElementById('btnCopiar');
+            const botoesRapidos = document.getElementById('botoesSorteioRapido');
+            
+            intro.classList.remove('intro-escondida');
+            container.innerHTML = '';
+            btnCopiar.classList.add('hidden');
+            botoesRapidos.classList.add('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function criarCard(carta, categoria, index) {
+            const div = document.createElement('div');
+            if (index !== undefined) div.id = `card-${index}`;
+            div.className = 'card-palimpsesto p-6';
+            div.innerHTML = `
+                <span class="text-[11px] font-bold text-amber-600 tracking-[0.5em] uppercase mb-4 block">${categoria}</span>
+                <h2 class="fonte-terminal text-3xl text-white mb-2 leading-none tracking-tighter">${carta.titulo}</h2>
+                <div class="text-[10px] text-gray-500 uppercase italic mb-2 border-b border-gray-800 pb-2">Arquétipo: ${carta.arquetipo_vinculado}</div>
+                <div class="img-container">
+                    <img src="${carta.image}" class="img-card-nanquim" alt="${carta.titulo}" onerror="this.src='https://placehold.co/600x800?text=ARQUIVO+NAO+ENCONTRADO'">
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">${carta.descricao}</p>
+                <div class="instrucao-box p-4 mt-auto">
+                    <h4 class="text-[10px] font-bold text-amber-600 uppercase mb-2">Instrução Narrativa</h4>
+                    <p class="text-xs text-amber-50 italic leading-snug">${carta.instrucao_narrativa}</p>
+                </div>
+            `;
+            return div;
+        }
+
+        // Função auxiliar para aplicar o flash colorido
+        function aplicarFlashColorido(cardElement) {
+            const img = cardElement.querySelector('.img-card-nanquim');
+            if (img) {
+                img.classList.add('flash-colorido');
+                // Remove a classe após 1.5s, fazendo ela voltar ao P&B suavemente
+                setTimeout(() => {
+                    img.classList.remove('flash-colorido');
+                }, 1500);
             }
         }
 
         function gerarTrama() {
+            document.getElementById('intro-section').classList.add('intro-escondida');
             const container = document.getElementById('tabuleiro');
             const btnCopiar = document.getElementById('btnCopiar');
             const botoesRapidosContainer = document.getElementById('botoesSorteioRapido');
-
+            
             container.innerHTML = '';
             botoesRapidosContainer.innerHTML = '';
             cartasSorteadas = [];
 
-            const cardElements = [];
             configuracao.forEach((config, index) => {
                 const deck = baseDeDados[config.chave];
-                if (deck && deck.length > 0) {
-                    const carta = deck[Math.floor(Math.random() * deck.length)];
-                    cartasSorteadas.push({ ...carta, categoria: config.label });
-                    const cardElement = criarCard(carta, config.label, index, config.chave);
-                    container.appendChild(cardElement);
-                    cardElements.push(cardElement);
+                const carta = deck[Math.floor(Math.random() * deck.length)];
+                cartasSorteadas.push({ ...carta, categoria: config.label });
+                
+                const cardElement = criarCard(carta, config.label, index);
+                container.appendChild(cardElement);
 
-                    const btnRapido = document.createElement('button');
-                    btnRapido.className = 'px-3 py-1 bg-gray-800 hover:bg-amber-700 text-gray-300 hover:text-white font-semibold rounded-sm border-b-2 border-gray-900 hover:border-amber-900 active:border-b-0 active:translate-y-px transition-all uppercase tracking-tighter text-[10px]';
-                    btnRapido.innerHTML = `↻ ${config.label.split(' ')[0]}`;
-                    btnRapido.onclick = () => sortearCartaUnica(index);
-                    botoesRapidosContainer.appendChild(btnRapido);
-                }
+                // Aplica o flash quando a carta é criada no sorteio geral
+                aplicarFlashColorido(cardElement);
+
+                const btn = document.createElement('button');
+                btn.className = 'px-3 py-1 bg-gray-800 hover:bg-amber-700 text-gray-300 hover:text-white font-semibold rounded-sm border-b-2 border-gray-900 active:translate-y-px transition-all uppercase tracking-tighter text-[10px]';
+                btn.innerHTML = `↻ ${config.label.split(' ')[0]}`;
+                btn.onclick = () => sortearCartaUnica(index);
+                botoesRapidosContainer.appendChild(btn);
+
+                setTimeout(() => cardElement.classList.add('visivel'), index * 120 + 200);
             });
 
             btnCopiar.classList.remove('hidden');
-            botoesRapidosContainer.classList.remove('hidden', 'flex');
+            botoesRapidosContainer.classList.remove('hidden');
             botoesRapidosContainer.classList.add('flex');
-
-            setTimeout(() => {
-                cardElements.forEach((card, i) => {
-                    setTimeout(() => card.classList.add('visivel'), i * 100);
-                });
-            }, 50);
-        }
-        
-        function criarCard(carta, categoria, index, deckKey) {
-            const div = document.createElement('div');
-            if (index !== undefined) div.id = `card-${index}`;
-            div.className = 'card-palimpsesto p-6';
-            
-            // Mapeia a chave do deck para a pasta de imagem correspondente
-            const deckFolderMap = {
-                'deck_vozes_atuacao': 'deck1',
-                'deck_cicatrizes_ideologicas': 'deck2',
-                'deck_tecido_mundo': 'deck3',
-                'deck_rupturas_percurso': 'deck4'
-            };
-            const deckFolder = deckFolderMap[deckKey];
-            const imagePath = deckFolder ? `assets/images/${deckFolder}/${carta.id.toLowerCase()}.webp` : '';
-
-            div.innerHTML = `
-                <span class="text-[10px] font-bold text-amber-700 tracking-[0.3em] uppercase mb-4">${categoria}</span>
-                <h2 class="card-title fonte-terminal text-2xl text-amber-100 mb-2">${carta.titulo}</h2>
-                <div class="text-[10px] text-gray-500 uppercase italic mb-4 border-b border-gray-800 pb-2">
-                    Arquétipo: ${carta.arquetipo_vinculado}
-                </div>
-                
-                ${imagePath ? `<img src="${imagePath}" class="img-card mb-4" alt="${carta.titulo}">` : ''}
-
-                <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">${carta.descricao}</p>
-                
-                <div class="instrucao-box p-4 mt-auto">
-                    <h4 class="text-[10px] font-bold text-amber-600 uppercase mb-2">Instrução Narrativa</h4>
-                    <p class="text-xs text-gray-200 italic leading-snug">${carta.instrucao_narrativa}</p>
-                </div>
-            `;
-            return div;
         }
 
         function sortearCartaUnica(deckIndex) {
             const config = configuracao[deckIndex];
             const deck = baseDeDados[config.chave];
             const novaCarta = deck[Math.floor(Math.random() * deck.length)];
+            cartasSorteadas[deckIndex] = { ...novaCarta, categoria: config.label };
             const cardElement = document.getElementById(`card-${deckIndex}`);
+            
             cardElement.classList.remove('visivel');
             setTimeout(() => {
-                cardElement.innerHTML = criarCard(novaCarta, config.label, deckIndex, config.chave).innerHTML;
+                cardElement.innerHTML = criarCard(novaCarta, config.label, deckIndex).innerHTML;
+                
+                // Aplica o flash quando a carta é trocada individualmente
+                aplicarFlashColorido(cardElement);
+                
                 setTimeout(() => cardElement.classList.add('visivel'), 50);
             }, 550);
         }
 
         function copiarRelatorio() {
-            let relatorio = "# Sinopse da Trama\n\n";
-            cartasSorteadas.forEach(c => relatorio += `## ${c.categoria}: ${c.titulo}\n*${c.instrucao_narrativa}*\n\n`);
-            navigator.clipboard.writeText(relatorio);
+            let rel = "# Sinopse: Motor de Tramas\n\n";
+            cartasSorteadas.forEach(c => rel += `## ${c.categoria}: ${c.titulo}\n*${c.instrucao_narrativa}*\n\n`);
+            navigator.clipboard.writeText(rel).then(() => {
+                const btn = document.getElementById('btnCopiar');
+                btn.innerHTML = 'Copiado!';
+                setTimeout(() => btn.innerHTML = 'Consolidar Relatório (MD)', 2000);
+            });
         }
 
         window.onload = carregarDecks;

@@ -1,422 +1,4 @@
 {
-    "deck_tecido_mundo": [
-        {
-            "id": "t01",
-            "titulo": "Sacola do Coletor",
-            "arquetipo_vinculado": "Recipiente",
-            "descricao": "A história foca no que sustenta a vida (comida, dados, remédios) em vez da arma que destrói.",
-            "instrucao_narrativa": "Resolva um conflito através da partilha de um recurso básico.",
-            "image": "assets/images/deck3/t01.webp"
-        },
-        {
-            "id": "t02",
-            "titulo": "Arquitetura da Opressão",
-            "arquetipo_vinculado": "Guardião",
-            "descricao": "O ambiente urbano desenhado para excluir corpos e facilitar a vigilância. A cidade como inimigo físico.",
-            "instrucao_narrativa": "Descreva como o design do prédio dificulta a ação do herói.",
-            "image": "assets/images/deck3/t02.webp"
-        },
-        {
-            "id": "t03",
-            "titulo": "Nome Verdadeiro",
-            "arquetipo_vinculado": "Mentor",
-            "descricao": "A cidade reage ao humor dos personagens. Há uma conexão biológica entre o cenário e a psiquê.",
-            "instrucao_narrativa": "Insira uma mudança climática que reflita o estado interno do herói.",
-            "image": "assets/images/deck3/t03.webp"
-        },
-        {
-            "id": "t04",
-            "titulo": "Hospitalidade",
-            "arquetipo_vinculado": "Aliado",
-            "descricao": "Código social antigo que obriga estranhos a se ajudarem, mesmo sob tensão extrema.",
-            "instrucao_narrativa": "O herói encontra abrigo improvável, mas deve seguir regra de conduta rigorosa.",
-            "image": "assets/images/deck3/t04.webp"
-        },
-        {
-            "id": "t05",
-            "titulo": "Infraestrutura Invisível",
-            "arquetipo_vinculado": "Arauto",
-            "descricao": "Foco nos trabalhadores que mantêm o mundo funcionando no anonimato (manutenção, esgoto).",
-            "instrucao_narrativa": "Uma informação crucial é obtida através de alguém que seria ignorado pelo sistema.",
-            "image": "assets/images/deck3/t05.webp"
-        },
-        {
-            "id": "t06",
-            "titulo": "Metabolismo Urbano",
-            "arquetipo_vinculado": "Camaleão",
-            "descricao": "A cidade como organismo vivo que respira e gera resíduos. Ruídos biológicos nas engrenagens.",
-            "instrucao_narrativa": "Descreva os sons da cidade como se fossem batimentos ou digestão.",
-            "image": "assets/images/deck3/t06.webp"
-        },
-        {
-            "id": "t07",
-            "titulo": "Rituais de Passagem",
-            "arquetipo_vinculado": "Mentor",
-            "descricao": "Tradição local que define quem pertence ao grupo. O teste simbólico de fidelidade.",
-            "instrucao_narrativa": "O herói deve passar por um teste físico ou simbólico para ganhar confiança.",
-            "image": "assets/images/deck3/t07.webp"
-        },
-        {
-            "id": "t08",
-            "titulo": "Memória do Solo",
-            "arquetipo_vinculado": "Sombra",
-            "descricao": "O local foi palco de um trauma histórico que ainda ressoa. O passado interfere na coragem.",
-            "instrucao_narrativa": "Descreva como o peso do passado no local dificulta a ação presente.",
-            "image": "assets/images/deck3/t08.webp"
-        },
-        {
-            "id": "t09",
-            "titulo": "Simbiose Forçada",
-            "arquetipo_vinculado": "Aliado",
-            "descricao": "Grupos diferentes que dependem um do outro para sobreviver, mesmo em conflito ideológico.",
-            "instrucao_narrativa": "Escreva uma cooperação tensa dependente de habilidades complementares.",
-            "image": "assets/images/deck3/t09.webp"
-        },
-        {
-            "id": "t10",
-            "titulo": "Mercado de Ideias",
-            "arquetipo_vinculado": "Pícaro",
-            "descricao": "Espaço onde informações proibidas são trocadas como mercadoria. O valor do imaterial.",
-            "instrucao_narrativa": "Negocie algo imaterial (segredo ou memória) em troca de um item físico.",
-            "image": "assets/images/deck3/t10.webp"
-        },
-        {
-            "id": "t11",
-            "titulo": "Barreira Biológica",
-            "arquetipo_vinculado": "Guardião",
-            "descricao": "Contaminação ou mutação que isola uma área. O ambiente que o corpo não habita sem proteção.",
-            "instrucao_narrativa": "O obstáculo é um ambiente hostil à biologia humana.",
-            "image": "assets/images/deck3/t11.webp"
-        },
-        {
-            "id": "t12",
-            "titulo": "Idioma das Ruas",
-            "arquetipo_vinculado": "Arauto",
-            "descricao": "Códigos visuais e dialetos que só os iniciados entendem. O isolamento social do estrangeiro.",
-            "instrucao_narrativa": "O herói falha em entender uma mensagem óbvia para os locais.",
-            "image": "assets/images/deck3/t12.webp"
-        },
-        {
-            "id": "t13",
-            "titulo": "Sacralidade do Lixo",
-            "arquetipo_vinculado": "Recipiente",
-            "descricao": "O que o sistema descarta torna-se recurso vital para os esquecidos. Valor espiritual no detrito.",
-            "instrucao_narrativa": "Dê um valor imenso a algo que o sistema considera lixo.",
-            "image": "assets/images/deck3/t13.webp"
-        },
-        {
-            "id": "t14",
-            "titulo": "Frio Estatístico",
-            "arquetipo_vinculado": "Sombra",
-            "descricao": "O peso dos censos e dívidas. Números que definem o direito à existência física.",
-            "instrucao_narrativa": "Introduza decisão burocrática que afeta milhares de forma impessoal.",
-            "image": "assets/images/deck3/t14.webp"
-        },
-        {
-            "id": "t15",
-            "titulo": "Eco da Revolta",
-            "arquetipo_vinculado": "Mentor",
-            "descricao": "Monumentos derrubados ou hinos proibidos que mantêm a chama da resistência viva.",
-            "instrucao_narrativa": "Um símbolo de resistência antiga inspira o herói em momento de desistência.",
-            "image": "assets/images/deck3/t15.webp"
-        },
-        {
-            "id": "t16",
-            "titulo": "Estética da Ruína",
-            "arquetipo_vinculado": "Camaleão",
-            "descricao": "A natureza retomando o concreto. Beleza encontrada no que está quebrado e abandonado.",
-            "instrucao_narrativa": "Descreva local decadente com reverência artística sublime.",
-            "image": "assets/images/deck3/t16.webp"
-        },
-        {
-            "id": "t17",
-            "titulo": "Pacto de Silêncio",
-            "arquetipo_vinculado": "Guardião",
-            "descricao": "Comunidade que se protege escondendo verdades de autoridades. O silêncio como barreira.",
-            "instrucao_narrativa": "Ninguém responde ao herói; o silêncio coletivo é o maior obstáculo.",
-            "image": "assets/images/deck3/t17.webp"
-        },
-        {
-            "id": "t18",
-            "titulo": "Fluxo Migratório",
-            "arquetipo_vinculado": "Arauto",
-            "descricao": "A chegada ou partida em massa mudando a dinâmica. O indivíduo perdido na corrente.",
-            "instrucao_narrativa": "Use movimento de multidão para separar aliados ou forçar encontro.",
-            "image": "assets/images/deck3/t18.webp"
-        },
-        {
-            "id": "t19",
-            "titulo": "Obsoletismo Ativo",
-            "arquetipo_vinculado": "Aliado",
-            "descricao": "Ferramentas do passado que o sistema moderno não rastreia. A segurança do analógico.",
-            "instrucao_narrativa": "Use algo antigo para superar vigilância digital de alta tecnologia.",
-            "image": "assets/images/deck3/t19.webp"
-        },
-        {
-            "id": "t20",
-            "titulo": "Tabu Alimentar",
-            "arquetipo_vinculado": "Guardião",
-            "descricao": "Regras sobre consumo que definem o pertencimento. O ato de comer como diplomacia.",
-            "instrucao_narrativa": "O ato de compartilhar (ou recusar) alimento torna-se ponto central do conflito.",
-            "image": "assets/images/deck3/t20.webp"
-        },
-        {
-            "id": "t21",
-            "titulo": "Religião Mecânica",
-            "arquetipo_vinculado": "Sombra",
-            "descricao": "Adoração da tecnologia como divina e incompreensível. Fervor contra lógica.",
-            "instrucao_narrativa": "Personagem trata máquina com fervor religioso, impedindo reparos lógicos.",
-            "image": "assets/images/deck3/t21.webp"
-        },
-        {
-            "id": "t22",
-            "titulo": "Clima Eletrizado",
-            "arquetipo_vinculado": "Arauto",
-            "descricao": "Tensão social prestes a explodir. Pequenos erros podem desencadear revolta popular.",
-            "instrucao_narrativa": "Qualquer erro de etiqueta na cena pode causar uma revolta imediata.",
-            "image": "assets/images/deck3/t22.webp"
-        },
-        {
-            "id": "t23",
-            "titulo": "Justiça de Fronteira",
-            "arquetipo_vinculado": "Herói",
-            "descricao": "Justiça feita pelas mãos da comunidade na ausência do Estado. Consciência vs Pressão.",
-            "instrucao_narrativa": "O herói deve julgar alguém baseando-se apenas na moral local.",
-            "image": "assets/images/deck3/t23.webp"
-        },
-        {
-            "id": "t24",
-            "titulo": "Parasitismo",
-            "arquetipo_vinculado": "Camaleão",
-            "descricao": "Grupos que vivem dentro de outros sem serem notados. O mundo nas brechas da rotina.",
-            "instrucao_narrativa": "Revele mundo escondido que existe nas frestas da vida cotidiana.",
-            "image": "assets/images/deck3/t24.webp"
-        },
-        {
-            "id": "t25",
-            "titulo": "Ritmo de Trabalho",
-            "arquetipo_vinculado": "Mentor",
-            "descricao": "Cantos e ritmos que coordenam o esforço coletivo. A cadência que mantém a sanidade.",
-            "instrucao_narrativa": "Use som repetitivo do ambiente para ditar a urgência da cena.",
-            "image": "assets/images/deck3/t25.webp"
-        },
-        {
-            "id": "t26",
-            "titulo": "Equilíbrio",
-            "arquetipo_vinculado": "Recipiente",
-            "descricao": "Conclusão de que a paz depende da partilha justa. O triunfo da sacola sobre a lança.",
-            "instrucao_narrativa": "O conflito termina com acordo de compartilhamento de recurso limitado.",
-            "image": "assets/images/deck3/t26.webp"
-        },
-        {
-            "id": "t01",
-            "titulo": "Arquétipo t01",
-            "image": "assets/images/deck3/t01.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t02",
-            "titulo": "Arquétipo t02",
-            "image": "assets/images/deck3/t02.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t03",
-            "titulo": "Arquétipo t03",
-            "image": "assets/images/deck3/t03.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t04",
-            "titulo": "Arquétipo t04",
-            "image": "assets/images/deck3/t04.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t05",
-            "titulo": "Arquétipo t05",
-            "image": "assets/images/deck3/t05.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t06",
-            "titulo": "Arquétipo t06",
-            "image": "assets/images/deck3/t06.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t07",
-            "titulo": "Arquétipo t07",
-            "image": "assets/images/deck3/t07.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t08",
-            "titulo": "Arquétipo t08",
-            "image": "assets/images/deck3/t08.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t09",
-            "titulo": "Arquétipo t09",
-            "image": "assets/images/deck3/t09.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t10",
-            "titulo": "Arquétipo t10",
-            "image": "assets/images/deck3/t10.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t11",
-            "titulo": "Arquétipo t11",
-            "image": "assets/images/deck3/t11.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t12",
-            "titulo": "Arquétipo t12",
-            "image": "assets/images/deck3/t12.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t13",
-            "titulo": "Arquétipo t13",
-            "image": "assets/images/deck3/t13.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t14",
-            "titulo": "Arquétipo t14",
-            "image": "assets/images/deck3/t14.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t15",
-            "titulo": "Arquétipo t15",
-            "image": "assets/images/deck3/t15.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t16",
-            "titulo": "Arquétipo t16",
-            "image": "assets/images/deck3/t16.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t17",
-            "titulo": "Arquétipo t17",
-            "image": "assets/images/deck3/t17.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t18",
-            "titulo": "Arquétipo t18",
-            "image": "assets/images/deck3/t18.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t19",
-            "titulo": "Arquétipo t19",
-            "image": "assets/images/deck3/t19.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t20",
-            "titulo": "Arquétipo t20",
-            "image": "assets/images/deck3/t20.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t21",
-            "titulo": "Arquétipo t21",
-            "image": "assets/images/deck3/t21.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t22",
-            "titulo": "Arquétipo t22",
-            "image": "assets/images/deck3/t22.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t23",
-            "titulo": "Arquétipo t23",
-            "image": "assets/images/deck3/t23.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t24",
-            "titulo": "Arquétipo t24",
-            "image": "assets/images/deck3/t24.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t25",
-            "titulo": "Arquétipo t25",
-            "image": "assets/images/deck3/t25.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "t26",
-            "titulo": "Arquétipo t26",
-            "image": "assets/images/deck3/t26.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        }
-    ],
     "deck_vozes_atuacao": [
         {
             "id": "v01",
@@ -625,214 +207,6 @@
             "descricao": "O personagem se desconecta da crise e foge para uma memória ou mundo imaginário no meio da ação.",
             "instrucao_narrativa": "Intercale o diálogo tenso com pensamentos lúdicos e desconexos.",
             "image": "assets/images/deck1/v26.webp"
-        },
-        {
-            "id": "v01",
-            "titulo": "Arquétipo v01",
-            "image": "assets/images/deck1/v01.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v02",
-            "titulo": "Arquétipo v02",
-            "image": "assets/images/deck1/v02.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v03",
-            "titulo": "Arquétipo v03",
-            "image": "assets/images/deck1/v03.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v04",
-            "titulo": "Arquétipo v04",
-            "image": "assets/images/deck1/v04.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v05",
-            "titulo": "Arquétipo v05",
-            "image": "assets/images/deck1/v05.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v06",
-            "titulo": "Arquétipo v06",
-            "image": "assets/images/deck1/v06.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v07",
-            "titulo": "Arquétipo v07",
-            "image": "assets/images/deck1/v07.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v08",
-            "titulo": "Arquétipo v08",
-            "image": "assets/images/deck1/v08.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v09",
-            "titulo": "Arquétipo v09",
-            "image": "assets/images/deck1/v09.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v10",
-            "titulo": "Arquétipo v10",
-            "image": "assets/images/deck1/v10.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v11",
-            "titulo": "Arquétipo v11",
-            "image": "assets/images/deck1/v11.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v12",
-            "titulo": "Arquétipo v12",
-            "image": "assets/images/deck1/v12.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v13",
-            "titulo": "Arquétipo v13",
-            "image": "assets/images/deck1/v13.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v14",
-            "titulo": "Arquétipo v14",
-            "image": "assets/images/deck1/v14.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v15",
-            "titulo": "Arquétipo v15",
-            "image": "assets/images/deck1/v15.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v16",
-            "titulo": "Arquétipo v16",
-            "image": "assets/images/deck1/v16.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v17",
-            "titulo": "Arquétipo v17",
-            "image": "assets/images/deck1/v17.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v18",
-            "titulo": "Arquétipo v18",
-            "image": "assets/images/deck1/v18.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v19",
-            "titulo": "Arquétipo v19",
-            "image": "assets/images/deck1/v19.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v20",
-            "titulo": "Arquétipo v20",
-            "image": "assets/images/deck1/v20.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v21",
-            "titulo": "Arquétipo v21",
-            "image": "assets/images/deck1/v21.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v22",
-            "titulo": "Arquétipo v22",
-            "image": "assets/images/deck1/v22.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v23",
-            "titulo": "Arquétipo v23",
-            "image": "assets/images/deck1/v23.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v24",
-            "titulo": "Arquétipo v24",
-            "image": "assets/images/deck1/v24.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v25",
-            "titulo": "Arquétipo v25",
-            "image": "assets/images/deck1/v25.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "v26",
-            "titulo": "Arquétipo v26",
-            "image": "assets/images/deck1/v26.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
         }
     ],
     "deck_cicatrizes_ideologicas": [
@@ -1043,214 +417,216 @@
             "descricao": "Triunfo da persistência coletiva sobre o heroísmo individual. O que mantemos na sacola importa mais.",
             "instrucao_narrativa": "A cena termina com o herói organizando a partilha de um recurso vital.",
             "image": "assets/images/deck2/g26.webp"
+        }
+    ],
+    "deck_tecido_mundo": [
+        {
+            "id": "t01",
+            "titulo": "Sacola do Coletor",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "A história foca no que sustenta a vida (comida, dados, remédios) em vez da arma que destrói.",
+            "instrucao_narrativa": "Resolva um conflito através da partilha de um recurso básico.",
+            "image": "assets/images/deck3/t01.webp"
         },
         {
-            "id": "g01",
-            "titulo": "Arquétipo g01",
-            "image": "assets/images/deck2/g01.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t02",
+            "titulo": "Arquitetura da Opressão",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "O ambiente urbano desenhado para excluir corpos e facilitar a vigilância. A cidade como inimigo físico.",
+            "instrucao_narrativa": "Descreva como o design do prédio dificulta a ação do herói.",
+            "image": "assets/images/deck3/t02.webp"
         },
         {
-            "id": "g02",
-            "titulo": "Arquétipo g02",
-            "image": "assets/images/deck2/g02.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t03",
+            "titulo": "Nome Verdadeiro",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "A cidade reage ao humor dos personagens. Há uma conexão biológica entre o cenário e a psiquê.",
+            "instrucao_narrativa": "Insira uma mudança climática que reflita o estado interno do herói.",
+            "image": "assets/images/deck3/t03.webp"
         },
         {
-            "id": "g03",
-            "titulo": "Arquétipo g03",
-            "image": "assets/images/deck2/g03.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t04",
+            "titulo": "Hospitalidade",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Código social antigo que obriga estranhos a se ajudarem, mesmo sob tensão extrema.",
+            "instrucao_narrativa": "O herói encontra abrigo improvável, mas deve seguir regra de conduta rigorosa.",
+            "image": "assets/images/deck3/t04.webp"
         },
         {
-            "id": "g04",
-            "titulo": "Arquétipo g04",
-            "image": "assets/images/deck2/g04.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t05",
+            "titulo": "Infraestrutura Invisível",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Foco nos trabalhadores que mantêm o mundo funcionando no anonimato (manutenção, esgoto).",
+            "instrucao_narrativa": "Uma informação crucial é obtida através de alguém que seria ignorado pelo sistema.",
+            "image": "assets/images/deck3/t05.webp"
         },
         {
-            "id": "g05",
-            "titulo": "Arquétipo g05",
-            "image": "assets/images/deck2/g05.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t06",
+            "titulo": "Metabolismo Urbano",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "A cidade como organismo vivo que respira e gera resíduos. Ruídos biológicos nas engrenagens.",
+            "instrucao_narrativa": "Descreva os sons da cidade como se fossem batimentos ou digestão.",
+            "image": "assets/images/deck3/t06.webp"
         },
         {
-            "id": "g06",
-            "titulo": "Arquétipo g06",
-            "image": "assets/images/deck2/g06.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t07",
+            "titulo": "Rituais de Passagem",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "Tradição local que define quem pertence ao grupo. O teste simbólico de fidelidade.",
+            "instrucao_narrativa": "O herói deve passar por um teste físico ou simbólico para ganhar confiança.",
+            "image": "assets/images/deck3/t07.webp"
         },
         {
-            "id": "g07",
-            "titulo": "Arquétipo g07",
-            "image": "assets/images/deck2/g07.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t08",
+            "titulo": "Memória do Solo",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "O local foi palco de um trauma histórico que ainda ressoa. O passado interfere na coragem.",
+            "instrucao_narrativa": "Descreva como o peso do passado no local dificulta a ação presente.",
+            "image": "assets/images/deck3/t08.webp"
         },
         {
-            "id": "g08",
-            "titulo": "Arquétipo g08",
-            "image": "assets/images/deck2/g08.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t09",
+            "titulo": "Simbiose Forçada",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Grupos diferentes que dependem um do outro para sobreviver, mesmo em conflito ideológico.",
+            "instrucao_narrativa": "Escreva uma cooperação tensa dependente de habilidades complementares.",
+            "image": "assets/images/deck3/t09.webp"
         },
         {
-            "id": "g09",
-            "titulo": "Arquétipo g09",
-            "image": "assets/images/deck2/g09.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t10",
+            "titulo": "Mercado de Ideias",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "Espaço onde informações proibidas são trocadas como mercadoria. O valor do imaterial.",
+            "instrucao_narrativa": "Negocie algo imaterial (segredo ou memória) em troca de um item físico.",
+            "image": "assets/images/deck3/t10.webp"
         },
         {
-            "id": "g10",
-            "titulo": "Arquétipo g10",
-            "image": "assets/images/deck2/g10.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t11",
+            "titulo": "Barreira Biológica",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Contaminação ou mutação que isola uma área. O ambiente que o corpo não habita sem proteção.",
+            "instrucao_narrativa": "O obstáculo é um ambiente hostil à biologia humana.",
+            "image": "assets/images/deck3/t11.webp"
         },
         {
-            "id": "g11",
-            "titulo": "Arquétipo g11",
-            "image": "assets/images/deck2/g11.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t12",
+            "titulo": "Idioma das Ruas",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Códigos visuais e dialetos que só os iniciados entendem. O isolamento social do estrangeiro.",
+            "instrucao_narrativa": "O herói falha em entender uma mensagem óbvia para os locais.",
+            "image": "assets/images/deck3/t12.webp"
         },
         {
-            "id": "g12",
-            "titulo": "Arquétipo g12",
-            "image": "assets/images/deck2/g12.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t13",
+            "titulo": "Sacralidade do Lixo",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "O que o sistema descarta torna-se recurso vital para os esquecidos. Valor espiritual no detrito.",
+            "instrucao_narrativa": "Dê um valor imenso a algo que o sistema considera lixo.",
+            "image": "assets/images/deck3/t13.webp"
         },
         {
-            "id": "g13",
-            "titulo": "Arquétipo g13",
-            "image": "assets/images/deck2/g13.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t14",
+            "titulo": "Frio Estatístico",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "O peso dos censos e dívidas. Números que definem o direito à existência física.",
+            "instrucao_narrativa": "Introduza decisão burocrática que afeta milhares de forma impessoal.",
+            "image": "assets/images/deck3/t14.webp"
         },
         {
-            "id": "g14",
-            "titulo": "Arquétipo g14",
-            "image": "assets/images/deck2/g14.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t15",
+            "titulo": "Eco da Revolta",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "Monumentos derrubados ou hinos proibidos que mantêm a chama da resistência viva.",
+            "instrucao_narrativa": "Um símbolo de resistência antiga inspira o herói em momento de desistência.",
+            "image": "assets/images/deck3/t15.webp"
         },
         {
-            "id": "g15",
-            "titulo": "Arquétipo g15",
-            "image": "assets/images/deck2/g15.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t16",
+            "titulo": "Estética da Ruína",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "A natureza retomando o concreto. Beleza encontrada no que está quebrado e abandonado.",
+            "instrucao_narrativa": "Descreva local decadente com reverência artística sublime.",
+            "image": "assets/images/deck3/t16.webp"
         },
         {
-            "id": "g16",
-            "titulo": "Arquétipo g16",
-            "image": "assets/images/deck2/g16.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t17",
+            "titulo": "Pacto de Silêncio",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Comunidade que se protege escondendo verdades de autoridades. O silêncio como barreira.",
+            "instrucao_narrativa": "Ninguém responde ao herói; o silêncio coletivo é o maior obstáculo.",
+            "image": "assets/images/deck3/t17.webp"
         },
         {
-            "id": "g17",
-            "titulo": "Arquétipo g17",
-            "image": "assets/images/deck2/g17.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t18",
+            "titulo": "Fluxo Migratório",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "A chegada ou partida em massa mudando a dinâmica. O indivíduo perdido na corrente.",
+            "instrucao_narrativa": "Use movimento de multidão para separar aliados ou forçar encontro.",
+            "image": "assets/images/deck3/t18.webp"
         },
         {
-            "id": "g18",
-            "titulo": "Arquétipo g18",
-            "image": "assets/images/deck2/g18.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t19",
+            "titulo": "Obsoletismo Ativo",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Ferramentas do passado que o sistema moderno não rastreia. A segurança do analógico.",
+            "instrucao_narrativa": "Use algo antigo para superar vigilância digital de alta tecnologia.",
+            "image": "assets/images/deck3/t19.webp"
         },
         {
-            "id": "g19",
-            "titulo": "Arquétipo g19",
-            "image": "assets/images/deck2/g19.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t20",
+            "titulo": "Tabu Alimentar",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Regras sobre consumo que definem o pertencimento. O ato de comer como diplomacia.",
+            "instrucao_narrativa": "O ato de compartilhar (ou recusar) alimento torna-se ponto central do conflito.",
+            "image": "assets/images/deck3/t20.webp"
         },
         {
-            "id": "g20",
-            "titulo": "Arquétipo g20",
-            "image": "assets/images/deck2/g20.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t21",
+            "titulo": "Religião Mecânica",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "Adoração da tecnologia como divina e incompreensível. Fervor contra lógica.",
+            "instrucao_narrativa": "Personagem trata máquina com fervor religioso, impedindo reparos lógicos.",
+            "image": "assets/images/deck3/t21.webp"
         },
         {
-            "id": "g21",
-            "titulo": "Arquétipo g21",
-            "image": "assets/images/deck2/g21.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t22",
+            "titulo": "Clima Eletrizado",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Tensão social prestes a explodir. Pequenos erros podem desencadear revolta popular.",
+            "instrucao_narrativa": "Qualquer erro de etiqueta na cena pode causar uma revolta imediata.",
+            "image": "assets/images/deck3/t22.webp"
         },
         {
-            "id": "g22",
-            "titulo": "Arquétipo g22",
-            "image": "assets/images/deck2/g22.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t23",
+            "titulo": "Justiça de Fronteira",
+            "arquetipo_vinculado": "Herói",
+            "descricao": "Justiça feita pelas mãos da comunidade na ausência do Estado. Consciência vs Pressão.",
+            "instrucao_narrativa": "O herói deve julgar alguém baseando-se apenas na moral local.",
+            "image": "assets/images/deck3/t23.webp"
         },
         {
-            "id": "g23",
-            "titulo": "Arquétipo g23",
-            "image": "assets/images/deck2/g23.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t24",
+            "titulo": "Parasitismo",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Grupos que vivem dentro de outros sem serem notados. O mundo nas brechas da rotina.",
+            "instrucao_narrativa": "Revele mundo escondido que existe nas frestas da vida cotidiana.",
+            "image": "assets/images/deck3/t24.webp"
         },
         {
-            "id": "g24",
-            "titulo": "Arquétipo g24",
-            "image": "assets/images/deck2/g24.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t25",
+            "titulo": "Ritmo de Trabalho",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "Cantos e ritmos que coordenam o esforço coletivo. A cadência que mantém a sanidade.",
+            "instrucao_narrativa": "Use som repetitivo do ambiente para ditar a urgência da cena.",
+            "image": "assets/images/deck3/t25.webp"
         },
         {
-            "id": "g25",
-            "titulo": "Arquétipo g25",
-            "image": "assets/images/deck2/g25.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "g26",
-            "titulo": "Arquétipo g26",
-            "image": "assets/images/deck2/g26.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
+            "id": "t26",
+            "titulo": "Equilíbrio",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "Conclusão de que a paz depende da partilha justa. O triunfo da sacola sobre a lança.",
+            "instrucao_narrativa": "O conflito termina com acordo de compartilhamento de recurso limitado.",
+            "image": "assets/images/deck3/t26.webp"
         }
     ],
     "deck_rupturas_percurso": [
@@ -1461,214 +837,6 @@
             "descricao": "A história termina criando lugar seguro, não com vitória. Proteger o que restou.",
             "instrucao_narrativa": "O foco muda para a preservação do coletivo e do futuro.",
             "image": "assets/images/deck4/r26.webp"
-        },
-        {
-            "id": "r01",
-            "titulo": "Arquétipo r01",
-            "image": "assets/images/deck4/r01.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r02",
-            "titulo": "Arquétipo r02",
-            "image": "assets/images/deck4/r02.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r03",
-            "titulo": "Arquétipo r03",
-            "image": "assets/images/deck4/r03.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r04",
-            "titulo": "Arquétipo r04",
-            "image": "assets/images/deck4/r04.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r05",
-            "titulo": "Arquétipo r05",
-            "image": "assets/images/deck4/r05.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r06",
-            "titulo": "Arquétipo r06",
-            "image": "assets/images/deck4/r06.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r07",
-            "titulo": "Arquétipo r07",
-            "image": "assets/images/deck4/r07.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r08",
-            "titulo": "Arquétipo r08",
-            "image": "assets/images/deck4/r08.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r09",
-            "titulo": "Arquétipo r09",
-            "image": "assets/images/deck4/r09.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r10",
-            "titulo": "Arquétipo r10",
-            "image": "assets/images/deck4/r10.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r11",
-            "titulo": "Arquétipo r11",
-            "image": "assets/images/deck4/r11.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r12",
-            "titulo": "Arquétipo r12",
-            "image": "assets/images/deck4/r12.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r13",
-            "titulo": "Arquétipo r13",
-            "image": "assets/images/deck4/r13.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r14",
-            "titulo": "Arquétipo r14",
-            "image": "assets/images/deck4/r14.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r15",
-            "titulo": "Arquétipo r15",
-            "image": "assets/images/deck4/r15.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r16",
-            "titulo": "Arquétipo r16",
-            "image": "assets/images/deck4/r16.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r17",
-            "titulo": "Arquétipo r17",
-            "image": "assets/images/deck4/r17.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r18",
-            "titulo": "Arquétipo r18",
-            "image": "assets/images/deck4/r18.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r19",
-            "titulo": "Arquétipo r19",
-            "image": "assets/images/deck4/r19.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r20",
-            "titulo": "Arquétipo r20",
-            "image": "assets/images/deck4/r20.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r21",
-            "titulo": "Arquétipo r21",
-            "image": "assets/images/deck4/r21.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r22",
-            "titulo": "Arquétipo r22",
-            "image": "assets/images/deck4/r22.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r23",
-            "titulo": "Arquétipo r23",
-            "image": "assets/images/deck4/r23.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r24",
-            "titulo": "Arquétipo r24",
-            "image": "assets/images/deck4/r24.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r25",
-            "titulo": "Arquétipo r25",
-            "image": "assets/images/deck4/r25.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
-        },
-        {
-            "id": "r26",
-            "titulo": "Arquétipo r26",
-            "image": "assets/images/deck4/r26.webp",
-            "arquetipo_vinculado": "Definir",
-            "descricao": "Texto pendente...",
-            "instrucao_narrativa": "Instrução pendente..."
         }
     ]
 }
