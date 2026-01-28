@@ -110,7 +110,7 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center p-4 md:p-12 text-justify md:text-left">
+<body oncontextmenu="return false" class="min-h-screen flex flex-col items-center p-4 md:p-12 text-justify md:text-left">
     <div class="overlay"></div>
 
     <div class="max-w-7xl w-full z-10">
@@ -192,7 +192,7 @@
                 <h2 class="fonte-terminal text-3xl text-white mb-2 leading-none tracking-tighter">${carta.titulo}</h2>
                 <div class="text-[10px] text-gray-500 uppercase italic mb-2 border-b border-gray-800 pb-2">Arquétipo: ${carta.arquetipo_vinculado}</div>
                 <div class="img-container">
-                    <img src="${carta.image}" class="img-card-nanquim" alt="${carta.titulo}" onerror="this.src='https://placehold.co/600x800?text=ARQUIVO+NAO+ENCONTRADO'">
+                    <img src="${carta.image}" class="img-card-nanquim" alt="${carta.titulo}" ondragstart="return false" onerror="this.src='https://placehold.co/600x800?text=ARQUIVO+NAO+ENCONTRADO'">
                 </div>
                 <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">${carta.descricao}</p>
                 <div class="instrucao-box p-4 mt-auto">
