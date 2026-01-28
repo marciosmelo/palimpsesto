@@ -59,7 +59,7 @@
         {
             "id": "v08",
             "titulo": "Espinha de Ferro",
-            "arquetipo_vinculado": "Herói",
+            "arquetipo_vinculado": "protagonista",
             "descricao": "A necessidade inabalável de manter a dignidade e a honra pessoal, mesmo que o custo seja a ruína total.",
             "instrucao_narrativa": "Recuse um caminho fácil por uma questão de princípio incompreensível aos outros.",
             "image": "assets/images/deck1/v08.webp"
@@ -69,7 +69,7 @@
             "titulo": "Empatia Crônica",
             "arquetipo_vinculado": "Aliado",
             "descricao": "Sentir a dor do outro como se a própria carne estivesse sendo cortada. A impossibilidade de ser cruel.",
-            "instrucao_narrativa": "Revele uma vulnerabilidade do oponente que impeça o ataque do herói.",
+            "instrucao_narrativa": "Revele uma vulnerabilidade do oponente que impeça o ataque do protagonista.",
             "image": "assets/images/deck1/v09.webp"
         },
         {
@@ -77,7 +77,7 @@
             "titulo": "Autoridade Ferida",
             "arquetipo_vinculado": "Sombra",
             "descricao": "O desejo de controle reagindo com violência a uma humilhação. A máscara do comando tentando esconder a fragilidade.",
-            "instrucao_narrativa": "Crie um conflito de hierarquia onde o herói tenta se impor de forma desproporcional.",
+            "instrucao_narrativa": "Crie um conflito de hierarquia onde o protagonista tenta se impor de forma desproporcional.",
             "image": "assets/images/deck1/v10.webp"
         },
         {
@@ -157,13 +157,13 @@
             "titulo": "Tribunal Interno",
             "arquetipo_vinculado": "Sombra",
             "descricao": "O julgamento constante de si mesmo. A culpa por erros passados que impede qualquer ação decisiva no presente.",
-            "instrucao_narrativa": "O herói estraga uma oportunidade por acreditar que não é digno dela.",
+            "instrucao_narrativa": "O protagonista estraga uma oportunidade por acreditar que não é digno dela.",
             "image": "assets/images/deck1/v20.webp"
         },
         {
             "id": "v21",
             "titulo": "Pulso Revolucionário",
-            "arquetipo_vinculado": "Herói",
+            "arquetipo_vinculado": "protagonista",
             "descricao": "O impulso visceral de quebrar hierarquias apenas pelo prazer da desobediência e da autonomia.",
             "instrucao_narrativa": "Confronte uma autoridade de forma gratuita para afirmar sua liberdade.",
             "image": "assets/images/deck1/v21.webp"
@@ -229,7 +229,7 @@
         {
             "id": "g03",
             "titulo": "Anarquismo de Inverno",
-            "arquetipo_vinculado": "Herói",
+            "arquetipo_vinculado": "protagonista",
             "descricao": "Liberdade total baseada na escassez compartilhada e na responsabilidade mútua absoluta.",
             "instrucao_narrativa": "Recuse um privilégio em favor da igualdade na dificuldade com o grupo.",
             "image": "assets/images/deck2/g03.webp"
@@ -255,7 +255,7 @@
             "titulo": "Teoria de Prateleira",
             "arquetipo_vinculado": "Camaleão",
             "descricao": "Ideais revolucionários na fala, mas inércia e egoísmo individualista na prática diária.",
-            "instrucao_narrativa": "Escreva um discurso inflamado seguido de uma ação mesquinha do herói.",
+            "instrucao_narrativa": "Escreva um discurso inflamado seguido de uma ação mesquinha do protagonista.",
             "image": "assets/images/deck2/g06.webp"
         },
         {
@@ -317,7 +317,7 @@
         {
             "id": "g14",
             "titulo": "Ética da Ruptura",
-            "arquetipo_vinculado": "Herói",
+            "arquetipo_vinculado": "protagonista",
             "descricao": "Nenhuma reforma é possível. A única moralidade aceitável é o colapso total da estrutura atual.",
             "instrucao_narrativa": "Cometa um ato de sabotagem justificando-o como necessidade revolucionária.",
             "image": "assets/images/deck2/g14.webp"
@@ -351,7 +351,7 @@
             "titulo": "Dívida do Nome",
             "arquetipo_vinculado": "Sombra",
             "descricao": "O peso dos crimes passados. O herdeiro do privilégio ou da desgraça de atos antigos.",
-            "instrucao_narrativa": "O herói é confrontado por alguém que sofreu com atos de seus antepassados.",
+            "instrucao_narrativa": "O protagonista é confrontado por alguém que sofreu com atos de seus antepassados.",
             "image": "assets/images/deck2/g18.webp"
         },
         {
@@ -391,12 +391,12 @@
             "titulo": "Hierarquia Biológica",
             "arquetipo_vinculado": "Sombra",
             "descricao": "Crença de que alguns nasceram para servir. Naturalização da desigualdade através da carne.",
-            "instrucao_narrativa": "Um personagem superior deve tratar o herói com condescendência naturalista.",
+            "instrucao_narrativa": "Um personagem superior deve tratar o protagonista com condescendência naturalista.",
             "image": "assets/images/deck2/g23.webp"
         },
         {
             "id": "g24",
-            "titulo": "Ética da Gambiarra",
+            "titulo": "Ética da Armengue",
             "arquetipo_vinculado": "Pícaro",
             "descricao": "Resistência através da subversão técnica. Usar ferramentas contra o propósito original do sistema.",
             "instrucao_narrativa": "Resolva um problema usando tecnologia de forma proibida ou imprevista.",
@@ -415,7 +415,7 @@
             "titulo": "Recipiente Comum",
             "arquetipo_vinculado": "Recipiente",
             "descricao": "Triunfo da persistência coletiva sobre o heroísmo individual. O que mantemos na sacola importa mais.",
-            "instrucao_narrativa": "A cena termina com o herói organizando a partilha de um recurso vital.",
+            "instrucao_narrativa": "A cena termina com o protagonista organizando a partilha de um recurso vital.",
             "image": "assets/images/deck2/g26.webp"
         }
     ],
@@ -433,7 +433,7 @@
             "titulo": "Arquitetura da Opressão",
             "arquetipo_vinculado": "Guardião",
             "descricao": "O ambiente urbano desenhado para excluir corpos e facilitar a vigilância. A cidade como inimigo físico.",
-            "instrucao_narrativa": "Descreva como o design do prédio dificulta a ação do herói.",
+            "instrucao_narrativa": "Descreva como o design do prédio dificulta a ação do protagonista.",
             "image": "assets/images/deck3/t02.webp"
         },
         {
@@ -441,7 +441,7 @@
             "titulo": "Nome Verdadeiro",
             "arquetipo_vinculado": "Mentor",
             "descricao": "A cidade reage ao humor dos personagens. Há uma conexão biológica entre o cenário e a psiquê.",
-            "instrucao_narrativa": "Insira uma mudança climática que reflita o estado interno do herói.",
+            "instrucao_narrativa": "Insira uma mudança climática que reflita o estado interno do protagonista.",
             "image": "assets/images/deck3/t03.webp"
         },
         {
@@ -449,7 +449,7 @@
             "titulo": "Hospitalidade",
             "arquetipo_vinculado": "Aliado",
             "descricao": "Código social antigo que obriga estranhos a se ajudarem, mesmo sob tensão extrema.",
-            "instrucao_narrativa": "O herói encontra abrigo improvável, mas deve seguir regra de conduta rigorosa.",
+            "instrucao_narrativa": "O protagonista encontra abrigo improvável, mas deve seguir regra de conduta rigorosa.",
             "image": "assets/images/deck3/t04.webp"
         },
         {
@@ -473,7 +473,7 @@
             "titulo": "Rituais de Passagem",
             "arquetipo_vinculado": "Mentor",
             "descricao": "Tradição local que define quem pertence ao grupo. O teste simbólico de fidelidade.",
-            "instrucao_narrativa": "O herói deve passar por um teste físico ou simbólico para ganhar confiança.",
+            "instrucao_narrativa": "O protagonista deve passar por um teste físico ou simbólico para ganhar confiança.",
             "image": "assets/images/deck3/t07.webp"
         },
         {
@@ -513,7 +513,7 @@
             "titulo": "Idioma das Ruas",
             "arquetipo_vinculado": "Arauto",
             "descricao": "Códigos visuais e dialetos que só os iniciados entendem. O isolamento social do estrangeiro.",
-            "instrucao_narrativa": "O herói falha em entender uma mensagem óbvia para os locais.",
+            "instrucao_narrativa": "O protagonista falha em entender uma mensagem óbvia para os locais.",
             "image": "assets/images/deck3/t12.webp"
         },
         {
@@ -537,7 +537,7 @@
             "titulo": "Eco da Revolta",
             "arquetipo_vinculado": "Mentor",
             "descricao": "Monumentos derrubados ou hinos proibidos que mantêm a chama da resistência viva.",
-            "instrucao_narrativa": "Um símbolo de resistência antiga inspira o herói em momento de desistência.",
+            "instrucao_narrativa": "Um símbolo de resistência antiga inspira o protagonista em momento de desistência.",
             "image": "assets/images/deck3/t15.webp"
         },
         {
@@ -553,7 +553,7 @@
             "titulo": "Pacto de Silêncio",
             "arquetipo_vinculado": "Guardião",
             "descricao": "Comunidade que se protege escondendo verdades de autoridades. O silêncio como barreira.",
-            "instrucao_narrativa": "Ninguém responde ao herói; o silêncio coletivo é o maior obstáculo.",
+            "instrucao_narrativa": "Ninguém responde ao protagonista; o silêncio coletivo é o maior obstáculo.",
             "image": "assets/images/deck3/t17.webp"
         },
         {
@@ -599,9 +599,9 @@
         {
             "id": "t23",
             "titulo": "Justiça de Fronteira",
-            "arquetipo_vinculado": "Herói",
+            "arquetipo_vinculado": "protagonista",
             "descricao": "Justiça feita pelas mãos da comunidade na ausência do Estado. Consciência vs Pressão.",
-            "instrucao_narrativa": "O herói deve julgar alguém baseando-se apenas na moral local.",
+            "instrucao_narrativa": "O protagonista deve julgar alguém baseando-se apenas na moral local.",
             "image": "assets/images/deck3/t23.webp"
         },
         {
@@ -635,7 +635,7 @@
             "titulo": "Aliança Incômoda",
             "arquetipo_vinculado": "Camaleão",
             "descricao": "Um inimigo torna-se o único caminho para a sobrevivência. Necessidade acima do nojo.",
-            "instrucao_narrativa": "Force o herói a colaborar com quem ele mais despreza.",
+            "instrucao_narrativa": "Force o protagonista a colaborar com quem ele mais despreza.",
             "image": "assets/images/deck4/r01.webp"
         },
         {
@@ -697,9 +697,9 @@
         {
             "id": "r09",
             "titulo": "Despertar",
-            "arquetipo_vinculado": "Herói",
+            "arquetipo_vinculado": "protagonista",
             "descricao": "Personagem percebe que é ferramenta de opressão. Sabotagem da própria missão por princípios.",
-            "instrucao_narrativa": "O herói sabota o próprio plano por consciência moral súbita.",
+            "instrucao_narrativa": "O protagonista sabota o próprio plano por consciência moral súbita.",
             "image": "assets/images/deck4/r09.webp"
         },
         {
@@ -738,8 +738,8 @@
             "id": "r14",
             "titulo": "Julgamento",
             "arquetipo_vinculado": "Mentor",
-            "descricao": "Herói julgado por comunidade que o observava. Justificar ações diante de estranhos.",
-            "instrucao_narrativa": "Justifique a moral do herói diante de um coletivo que o vigia.",
+            "descricao": "protagonista julgado por comunidade que o observava. Justificar ações diante de estranhos.",
+            "instrucao_narrativa": "Justifique a moral do protagonista diante de um coletivo que o vigia.",
             "image": "assets/images/deck4/r14.webp"
         },
         {
@@ -747,15 +747,15 @@
             "titulo": "Retorno",
             "arquetipo_vinculado": "Arauto",
             "descricao": "Alguém apagado da história retorna com verdade inconveniente que invalida vitórias.",
-            "instrucao_narrativa": "O retorno de um exilado desestabiliza o poder atual do herói.",
+            "instrucao_narrativa": "O retorno de um exilado desestabiliza o poder atual do protagonista.",
             "image": "assets/images/deck4/r15.webp"
         },
         {
             "id": "r16",
             "titulo": "Pane Técnica",
             "arquetipo_vinculado": "Guardião",
-            "descricao": "Ferramenta principal quebra no pior momento. Quem é o herói sem seu prolongamento?",
-            "instrucao_narrativa": "O herói deve agir sem sua arma ou ferramenta tecnológica básica.",
+            "descricao": "Ferramenta principal quebra no pior momento. Quem é o protagonista sem seu prolongamento?",
+            "instrucao_narrativa": "O protagonista deve agir sem sua arma ou ferramenta tecnológica básica.",
             "image": "assets/images/deck4/r16.webp"
         },
         {
@@ -795,7 +795,7 @@
             "titulo": "Fardo",
             "arquetipo_vinculado": "Pícaro",
             "descricao": "Receber o que pediu e descobrir que não pode pagar as consequências. O desejo realizado.",
-            "instrucao_narrativa": "O herói obtém o que queria, mas isso cria um problema maior.",
+            "instrucao_narrativa": "O protagonista obtém o que queria, mas isso cria um problema maior.",
             "image": "assets/images/deck4/r21.webp"
         },
         {
@@ -803,7 +803,7 @@
             "titulo": "Mutação",
             "arquetipo_vinculado": "Camaleão",
             "descricao": "Corpo começa a falhar ou mudar de forma. Perda de controle sobre a própria carne.",
-            "instrucao_narrativa": "O conflito principal torna-se a integridade física do próprio herói.",
+            "instrucao_narrativa": "O conflito principal torna-se a integridade física do próprio protagonista.",
             "image": "assets/images/deck4/r22.webp"
         },
         {
@@ -826,8 +826,8 @@
             "id": "r25",
             "titulo": "Espelho",
             "arquetipo_vinculado": "Sombra",
-            "descricao": "Herói e vilão são idênticos, exceto por detalhe trivial. Diálogo sobre moralidade.",
-            "instrucao_narrativa": "O herói deve confrontar suas semelhanças com o seu antagonista.",
+            "descricao": "protagonista e vilão são idênticos, exceto por detalhe trivial. Diálogo sobre moralidade.",
+            "instrucao_narrativa": "O protagonista deve confrontar suas semelhanças com o seu antagonista.",
             "image": "assets/images/deck4/r25.webp"
         },
         {
