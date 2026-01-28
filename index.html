@@ -22,7 +22,6 @@
 
         .fonte-terminal { font-family: 'Special Elite', cursive; }
 
-        /* Estética Disco Elysium / Miéville */
         .card-palimpsesto {
             background: linear-gradient(145deg, #1f2229, #15171d);
             border: 1px solid #2d3139;
@@ -34,6 +33,9 @@
                 border-color 0.2s ease-in-out;
             opacity: 0;
             transform: translateY(30px);
+            height: 520px;
+            display: flex;
+            flex-direction: column;
         }
 
         .card-palimpsesto.visivel {
@@ -43,13 +45,8 @@
 
         .card-palimpsesto:hover {
             border-color: var(--cor-detalhe);
-            transform: translateY(-5px); /* Efeito de levantar um pouco */
-            box-shadow: 10px 10px 0px var(--cor-detalhe);
-        }
-
-        /* Mantém o hover estável após a animação de entrada */
-        .card-palimpsesto.visivel:hover {
             transform: translateY(-5px);
+            box-shadow: 10px 10px 0px var(--cor-detalhe);
         }
 
         .instrucao-box {
@@ -57,11 +54,28 @@
             border-left: 4px solid var(--cor-detalhe);
         }
 
-        /* Efeito de ruído/textura no fundo */
         .overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
             opacity: 0.05; pointer-events: none; z-index: 50;
+        }
+
+        .img-card {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #2d3139;
+            border-radius: 3px;
+            background: #000;
+        }
+
+        .card-title {
+            height: 64px;
+            line-height: 1.25;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
     </style>
 </head>
@@ -82,9 +96,7 @@
                 </button>
             </div>
 
-            <div id="botoesSorteioRapido" class="hidden justify-center items-center gap-2 mt-4">
-                <!-- Botões de sorteio rápido serão inseridos aqui pelo script -->
-            </div>
+            <div id="botoesSorteioRapido" class="hidden justify-center items-center gap-2 mt-4"></div>
         </header>
 
         <div id="tabuleiro" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -97,7 +109,6 @@
     <script>
         let baseDeDados = {};
         let cartasSorteadas = [];
-        // Mapeamento das chaves do seu JSON. Movido para o escopo global para ser acessível.
         const configuracao = [
             { chave: 'deck_vozes_atuacao', label: 'Voz de Atuação' },
             { chave: 'deck_cicatrizes_ideologicas', label: 'Cicatriz Ideológica' },
@@ -105,16 +116,13 @@
             { chave: 'deck_rupturas_percurso', label: 'Ruptura de Percurso' }
         ];
 
-        // Carrega o arquivo unificado
         async function carregarDecks() {
             try {
                 const response = await fetch('./data/decks_master.json');
                 if (!response.ok) throw new Error("Não achei o decks_master.json");
                 baseDeDados = await response.json();
-                console.log("Mestre de Dados pronto.");
             } catch (err) {
                 console.error("Erro fatal:", err);
-                document.getElementById('tabuleiro').innerHTML = `<p class="text-red-500 col-span-full">Erro: Rode o script Python primeiro para gerar o arquivo mestre.</p>`;
             }
         }
 
@@ -133,67 +141,55 @@
                 if (deck && deck.length > 0) {
                     const carta = deck[Math.floor(Math.random() * deck.length)];
                     cartasSorteadas.push({ ...carta, categoria: config.label });
-                    const cardElement = criarCard(carta, config.label, index);
+                    const cardElement = criarCard(carta, config.label, index, config.chave);
                     container.appendChild(cardElement);
                     cardElements.push(cardElement);
 
                     const btnRapido = document.createElement('button');
                     btnRapido.className = 'px-3 py-1 bg-gray-800 hover:bg-amber-700 text-gray-300 hover:text-white font-semibold rounded-sm border-b-2 border-gray-900 hover:border-amber-900 active:border-b-0 active:translate-y-px transition-all uppercase tracking-tighter text-[10px]';
                     btnRapido.innerHTML = `↻ ${config.label.split(' ')[0]}`;
-                    btnRapido.title = `Sorteio Rápido: ${config.label}`;
                     btnRapido.onclick = () => sortearCartaUnica(index);
                     botoesRapidosContainer.appendChild(btnRapido);
                 }
             });
 
             btnCopiar.classList.remove('hidden');
-            botoesRapidosContainer.classList.remove('hidden');
+            botoesRapidosContainer.classList.remove('hidden', 'flex');
             botoesRapidosContainer.classList.add('flex');
 
             setTimeout(() => {
-                cardElements.forEach((card, index) => {
-                    setTimeout(() => {
-                        card.classList.add('visivel');
-                    }, index * 100);
+                cardElements.forEach((card, i) => {
+                    setTimeout(() => card.classList.add('visivel'), i * 100);
                 });
             }, 50);
         }
         
-        function sortearCartaUnica(deckIndex) {
-            const config = configuracao[deckIndex];
-            const deck = baseDeDados[config.chave];
-            if (!deck || deck.length === 0) return;
-
-            const novaCarta = deck[Math.floor(Math.random() * deck.length)];
-            cartasSorteadas[deckIndex] = { ...novaCarta, categoria: config.label };
-
-            const cardElement = document.getElementById(`card-${deckIndex}`);
-            if (!cardElement) return;
-
-            cardElement.classList.remove('visivel');
-
-            setTimeout(() => {
-                const novoConteudo = criarCard(novaCarta, config.label, deckIndex);
-                cardElement.innerHTML = novoConteudo.innerHTML;
-                setTimeout(() => {
-                    cardElement.classList.add('visivel');
-                }, 50);
-            }, 550);
-        }
-
-        function criarCard(carta, categoria, index) {
+        function criarCard(carta, categoria, index, deckKey) {
             const div = document.createElement('div');
-            if (index !== undefined) {
-                div.id = `card-${index}`;
-            }
-            div.className = 'card-palimpsesto p-6 flex flex-col min-h-[400px]';
+            if (index !== undefined) div.id = `card-${index}`;
+            div.className = 'card-palimpsesto p-6';
+            
+            // Mapeia a chave do deck para a pasta de imagem correspondente
+            const deckFolderMap = {
+                'deck_vozes_atuacao': 'deck1',
+                'deck_cicatrizes_ideologicas': 'deck2',
+                'deck_tecido_mundo': 'deck3',
+                'deck_rupturas_percurso': 'deck4'
+            };
+            const deckFolder = deckFolderMap[deckKey];
+            const imagePath = deckFolder ? `assets/images/${deckFolder}/${carta.id.toLowerCase()}.webp` : '';
+
             div.innerHTML = `
                 <span class="text-[10px] font-bold text-amber-700 tracking-[0.3em] uppercase mb-4">${categoria}</span>
-                <h2 class="fonte-terminal text-2xl text-amber-100 mb-2">${carta.titulo}</h2>
+                <h2 class="card-title fonte-terminal text-2xl text-amber-100 mb-2">${carta.titulo}</h2>
                 <div class="text-[10px] text-gray-500 uppercase italic mb-4 border-b border-gray-800 pb-2">
                     Arquétipo: ${carta.arquetipo_vinculado}
                 </div>
+                
+                ${imagePath ? `<img src="${imagePath}" class="img-card mb-4" alt="${carta.titulo}">` : ''}
+
                 <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">${carta.descricao}</p>
+                
                 <div class="instrucao-box p-4 mt-auto">
                     <h4 class="text-[10px] font-bold text-amber-600 uppercase mb-2">Instrução Narrativa</h4>
                     <p class="text-xs text-gray-200 italic leading-snug">${carta.instrucao_narrativa}</p>
@@ -202,34 +198,24 @@
             return div;
         }
 
-        function copiarRelatorio() {
-            if (cartasSorteadas.length === 0) return;
-
-            let relatorioMarkdown = "# Sinopse da Trama\n\n";
-            cartasSorteadas.forEach(carta => {
-                relatorioMarkdown += `## ${carta.categoria}: ${carta.titulo}\n`;
-                relatorioMarkdown += `**Instrução:** *${carta.instrucao_narrativa}*\n\n`;
-            });
-
-            navigator.clipboard.writeText(relatorioMarkdown).then(() => {
-                const btn = document.getElementById('btnCopiar');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = 'Copiado!';
-                btn.classList.add('bg-green-600', 'border-green-800');
-                btn.classList.remove('bg-gray-700', 'border-gray-900', 'hover:bg-gray-600');
-                
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.classList.remove('bg-green-600', 'border-green-800');
-                    btn.classList.add('bg-gray-700', 'border-gray-900', 'hover:bg-gray-600');
-                }, 2000);
-            }).catch(err => {
-                console.error('Erro ao copiar:', err);
-                alert('Não foi possível copiar para a área de transferência.');
-            });
+        function sortearCartaUnica(deckIndex) {
+            const config = configuracao[deckIndex];
+            const deck = baseDeDados[config.chave];
+            const novaCarta = deck[Math.floor(Math.random() * deck.length)];
+            const cardElement = document.getElementById(`card-${deckIndex}`);
+            cardElement.classList.remove('visivel');
+            setTimeout(() => {
+                cardElement.innerHTML = criarCard(novaCarta, config.label, deckIndex, config.chave).innerHTML;
+                setTimeout(() => cardElement.classList.add('visivel'), 50);
+            }, 550);
         }
 
-        // Inicia o carregamento
+        function copiarRelatorio() {
+            let relatorio = "# Sinopse da Trama\n\n";
+            cartasSorteadas.forEach(c => relatorio += `## ${c.categoria}: ${c.titulo}\n*${c.instrucao_narrativa}*\n\n`);
+            navigator.clipboard.writeText(relatorio);
+        }
+
         window.onload = carregarDecks;
     </script>
 </body>
