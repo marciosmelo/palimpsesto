@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria Palimpsesto</title>
+    <style>
+        body { background: #121212; color: white; font-family: sans-serif; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .card { border: 1px solid #333; padding: 5px; text-align: center; width: 150px; }
+        img { width: 100%; height: auto; display: block; filter: grayscale(0.5); transition: 0.3s; }
+        img:hover { filter: grayscale(0); transform: scale(1.1); }
+        p { font-size: 12px; margin-top: 5px; color: #aaa; }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        fetch('decks_master.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('container');
+                Object.keys(data).forEach(deck => {
+                    data[deck].forEach(card => {
+                        const div = document.createElement('div');
+                        div.className = 'card';
+                        div.innerHTML = `<img src="${card.image}"><p>${card.id}</p>`;
+                        container.appendChild(div);
+                    });
+                });
+            });
+    </script>
+</body>
+</html>
