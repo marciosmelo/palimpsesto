@@ -1,0 +1,842 @@
+{
+    "deck_vozes_atuacao": [
+        {
+            "id": "v01",
+            "titulo": "Radar Dialético",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "A capacidade de enxergar as linhas de força e o trabalho acumulado em cada objeto. O mundo deixa de ser um cenário e se torna um inventário de suor e exploração.",
+            "instrucao_narrativa": "Descreva o ambiente focando no custo humano para ele existir.",
+            "image": "assets/images/deck1/v01.webp"
+        },
+        {
+            "id": "v02",
+            "titulo": "Visão Quimérica",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "O estranho invade o cotidiano. As formas biológicas e mecânicas se fundem em uma geometria impossível e perturbadora.",
+            "instrucao_narrativa": "Introduza um detalhe grotesco na descrição de algo comum.",
+            "image": "assets/images/deck1/v02.webp"
+        },
+        {
+            "id": "v03",
+            "titulo": "Eco da Massa",
+            "arquetipo_vinculado": "Mentor Coletivo",
+            "descricao": "A vontade do indivíduo é engolida pelo humor da multidão. O 'eu' torna-se apenas um canal para o desejo das massas.",
+            "instrucao_narrativa": "O personagem toma uma decisão baseada puramente na pressão social.",
+            "image": "assets/images/deck1/v03.webp"
+        },
+        {
+            "id": "v04",
+            "titulo": "Lógica de Entulho",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Encontrar utilidade no que foi descartado. O improviso como forma de resistência técnica contra a obsolescência.",
+            "instrucao_narrativa": "Resolva um problema usando apenas lixo ou ferramentas improvisadas.",
+            "image": "assets/images/deck1/v04.webp"
+        },
+        {
+            "id": "v05",
+            "titulo": "Radar da Dívida",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "A percepção imediata de quem deve o quê a quem. O peso das obrigações morais e financeiras que ditam as falas.",
+            "instrucao_narrativa": "A tensão da cena deve girar em torno de uma dívida ética ou financeira.",
+            "image": "assets/images/deck1/v05.webp"
+        },
+        {
+            "id": "v06",
+            "titulo": "Frequência do Silêncio",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "A percepção do que não foi dito. O espaço carregado entre as palavras onde as verdadeiras intenções se escondem.",
+            "instrucao_narrativa": "Escreva um diálogo onde o subtexto nega as palavras ditas.",
+            "image": "assets/images/deck1/v06.webp"
+        },
+        {
+            "id": "v07",
+            "titulo": "Impulso Sensorial",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "A busca desesperada por estímulos, vícios ou prazer imediato que obscurece qualquer plano racional.",
+            "instrucao_narrativa": "O personagem sabota a missão por causa de uma distração sensorial.",
+            "image": "assets/images/deck1/v07.webp"
+        },
+        {
+            "id": "v08",
+            "titulo": "Espinha de Ferro",
+            "arquetipo_vinculado": "protagonista",
+            "descricao": "A necessidade inabalável de manter a dignidade e a honra pessoal, mesmo que o custo seja a ruína total.",
+            "instrucao_narrativa": "Recuse um caminho fácil por uma questão de princípio incompreensível aos outros.",
+            "image": "assets/images/deck1/v08.webp"
+        },
+        {
+            "id": "v09",
+            "titulo": "Empatia Crônica",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Sentir a dor do outro como se a própria carne estivesse sendo cortada. A impossibilidade de ser cruel.",
+            "instrucao_narrativa": "Revele uma vulnerabilidade do oponente que impeça o ataque do protagonista.",
+            "image": "assets/images/deck1/v09.webp"
+        },
+        {
+            "id": "v10",
+            "titulo": "Autoridade Ferida",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "O desejo de controle reagindo com violência a uma humilhação. A máscara do comando tentando esconder a fragilidade.",
+            "instrucao_narrativa": "Crie um conflito de hierarquia onde o protagonista tenta se impor de forma desproporcional.",
+            "image": "assets/images/deck1/v10.webp"
+        },
+        {
+            "id": "v11",
+            "titulo": "Instinto de Toca",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Foco total em rotas de fuga e segurança. O medo de ser capturado transforma cada sala em um labirinto de saídas.",
+            "instrucao_narrativa": "Descreva o ambiente apenas através de pontos de fuga ou esconderijos.",
+            "image": "assets/images/deck1/v11.webp"
+        },
+        {
+            "id": "v12",
+            "titulo": "Observador Estranho",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Olhar para rituais humanos como se fosse de uma espécie alienígena. Nada é normal; tudo é um comportamento exótico.",
+            "instrucao_narrativa": "Descreva um gesto social comum como se fosse algo bizarro e biológico.",
+            "image": "assets/images/deck1/v12.webp"
+        },
+        {
+            "id": "v13",
+            "titulo": "Voz Algorítmica",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "O mundo é um conjunto de variáveis e protocolos. O desapego emocional em favor da pura eficiência técnica.",
+            "instrucao_narrativa": "Resolva a cena como um problema de engenharia, ignorando o drama humano.",
+            "image": "assets/images/deck1/v13.webp"
+        },
+        {
+            "id": "v14",
+            "titulo": "Calafrio Existencial",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "O niilismo súbito. A percepção de que a história é apenas poeira diante da imensidão do tempo e do espaço.",
+            "instrucao_narrativa": "O personagem reage a um evento importante com apatia absoluta ou humor negro.",
+            "image": "assets/images/deck1/v14.webp"
+        },
+        {
+            "id": "v15",
+            "titulo": "Ancestralidade Latente",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "O peso das tradições e superstições que guiam o personagem, mesmo quando a lógica moderna diz o contrário.",
+            "instrucao_narrativa": "Siga um tabu antigo que prejudique a eficiência imediata da missão.",
+            "image": "assets/images/deck1/v15.webp"
+        },
+        {
+            "id": "v16",
+            "titulo": "Euforia Maníaca",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "Uma esperança cega e perigosa. A convicção de que tudo dará certo, ignorando todas as evidências de fracasso.",
+            "instrucao_narrativa": "O personagem convence os outros a seguir um plano suicida por puro otimismo.",
+            "image": "assets/images/deck1/v16.webp"
+        },
+        {
+            "id": "v17",
+            "titulo": "Somatização",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "O corpo fala antes da mente. Fome, adrenalina e fadiga ditam o ritmo da percepção mais que a vontade.",
+            "instrucao_narrativa": "Narre a cena focando no desconforto físico crônico do personagem.",
+            "image": "assets/images/deck1/v17.webp"
+        },
+        {
+            "id": "v18",
+            "titulo": "Paranoia Sistêmica",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "A certeza de que cada detalhe urbano é uma ferramenta de vigilância. O mundo conspirando contra o indivíduo.",
+            "instrucao_narrativa": "O personagem vê uma armadilha em um objeto inofensivo e muda seu agir.",
+            "image": "assets/images/deck1/v18.webp"
+        },
+        {
+            "id": "v19",
+            "titulo": "Estética da Ruína",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Beleza encontrada na decadência e no colapso. O fascínio pelo que está quebrado e pelo que o tempo corrói.",
+            "instrucao_narrativa": "Descreva algo destruído com um lirismo inesperado e sedutor.",
+            "image": "assets/images/deck1/v19.webp"
+        },
+        {
+            "id": "v20",
+            "titulo": "Tribunal Interno",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "O julgamento constante de si mesmo. A culpa por erros passados que impede qualquer ação decisiva no presente.",
+            "instrucao_narrativa": "O protagonista estraga uma oportunidade por acreditar que não é digno dela.",
+            "image": "assets/images/deck1/v20.webp"
+        },
+        {
+            "id": "v21",
+            "titulo": "Pulso Revolucionário",
+            "arquetipo_vinculado": "protagonista",
+            "descricao": "O impulso visceral de quebrar hierarquias apenas pelo prazer da desobediência e da autonomia.",
+            "instrucao_narrativa": "Confronte uma autoridade de forma gratuita para afirmar sua liberdade.",
+            "image": "assets/images/deck1/v21.webp"
+        },
+        {
+            "id": "v22",
+            "titulo": "Zeladoria Social",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Foco em preservar o que sustenta o grupo. O cuidado com o outro acima da glória pessoal.",
+            "instrucao_narrativa": "Resolva uma tensão cuidando de uma necessidade básica de alguém.",
+            "image": "assets/images/deck1/v22.webp"
+        },
+        {
+            "id": "v23",
+            "titulo": "Rancor Arquivado",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "A lembrança vívida de cada ofensa. O ressentimento como única motivação para seguir em frente.",
+            "instrucao_narrativa": "Traga um erro antigo do interlocutor para a mesa de negociação.",
+            "image": "assets/images/deck1/v23.webp"
+        },
+        {
+            "id": "v24",
+            "titulo": "Misticismo Urbano",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Achar significados metafísicos no acaso. Interpretar manchas e detritos como sinais de um destino maior.",
+            "instrucao_narrativa": "Tome uma direção crucial baseando-se em um sinal aleatório do ambiente.",
+            "image": "assets/images/deck1/v24.webp"
+        },
+        {
+            "id": "v25",
+            "titulo": "Frieza Executiva",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Utilitarismo puro. As pessoas são recursos ou obstáculos. A emoção é um erro de sistema.",
+            "instrucao_narrativa": "Tome uma decisão logicamente correta, mas emocionalmente devastadora.",
+            "image": "assets/images/deck1/v25.webp"
+        },
+        {
+            "id": "v26",
+            "titulo": "Sonho Lúcido",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "O personagem se desconecta da crise e foge para uma memória ou mundo imaginário no meio da ação.",
+            "instrucao_narrativa": "Intercale o diálogo tenso com pensamentos lúdicos e desconexos.",
+            "image": "assets/images/deck1/v26.webp"
+        }
+    ],
+    "deck_cicatrizes_ideologicas": [
+        {
+            "id": "g01",
+            "titulo": "Utopia Ferrugenta",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "A crença em um coletivismo que faliu, mas cujos ideais ainda brilham sob a lama. A esperança teimosa.",
+            "instrucao_narrativa": "Aja com uma solidariedade que o mundo atual considera obsoleta.",
+            "image": "assets/images/deck2/g01.webp"
+        },
+        {
+            "id": "g02",
+            "titulo": "Capital Monstruoso",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "As instituições são deuses antigos que exigem sacrifícios de tempo e vida para continuar girando.",
+            "instrucao_narrativa": "Reaja a uma organização com um medo religioso e paralisante.",
+            "image": "assets/images/deck2/g02.webp"
+        },
+        {
+            "id": "g03",
+            "titulo": "Anarquismo de Inverno",
+            "arquetipo_vinculado": "protagonista",
+            "descricao": "Liberdade total baseada na escassez compartilhada e na responsabilidade mútua absoluta.",
+            "instrucao_narrativa": "Recuse um privilégio em favor da igualdade na dificuldade com o grupo.",
+            "image": "assets/images/deck2/g03.webp"
+        },
+        {
+            "id": "g04",
+            "titulo": "Burocracia Sagrada",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "A crença de que as leis e protocolos são a única barreira real contra o caos absoluto.",
+            "instrucao_narrativa": "Trave um avanço por causa de uma tecnicalidade burocrática insignificante.",
+            "image": "assets/images/deck2/g04.webp"
+        },
+        {
+            "id": "g05",
+            "titulo": "Fetiche do Passado",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Nostalgia agressiva por uma era pré-colapso. O medo do futuro manifestado como obsessão retrô.",
+            "instrucao_narrativa": "Perca uma oportunidade por tentar restaurar algo que já morreu.",
+            "image": "assets/images/deck2/g05.webp"
+        },
+        {
+            "id": "g06",
+            "titulo": "Teoria de Prateleira",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Ideais revolucionários na fala, mas inércia e egoísmo individualista na prática diária.",
+            "instrucao_narrativa": "Escreva um discurso inflamado seguido de uma ação mesquinha do protagonista.",
+            "image": "assets/images/deck2/g06.webp"
+        },
+        {
+            "id": "g07",
+            "titulo": "Niilismo Hedonista",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "O mundo vai acabar, a única moral válida é a busca pelo prazer imediato e sensorial.",
+            "instrucao_narrativa": "Ignore um perigo coletivo para desfrutar de um vício ou pequeno luxo.",
+            "image": "assets/images/deck2/g07.webp"
+        },
+        {
+            "id": "g08",
+            "titulo": "Ecologia da Sobrevivência",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "A natureza não é cenário; é nossa única aliada e mestre. Adaptação ou morte.",
+            "instrucao_narrativa": "Resolva o conflito através da adaptação ao ambiente, não do seu domínio.",
+            "image": "assets/images/deck2/g08.webp"
+        },
+        {
+            "id": "g09",
+            "titulo": "Individualismo Bruto",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "A crença de que 'cada um por si' é a única lei natural que restou no asfalto.",
+            "instrucao_narrativa": "Traia uma pequena confiança por acreditar que a lealdade é uma fraqueza.",
+            "image": "assets/images/deck2/g09.webp"
+        },
+        {
+            "id": "g10",
+            "titulo": "Vanguarda Iluminada",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "A arrogância de quem acredita saber o que é melhor para o povo sem nunca o ouvir de fato.",
+            "instrucao_narrativa": "Tome uma decisão autoritária 'pelo bem de todos' que cause sofrimento.",
+            "image": "assets/images/deck2/g10.webp"
+        },
+        {
+            "id": "g11",
+            "titulo": "Solidariedade do Fosso",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Lealdade visceral baseada no reconhecimento mútuo da opressão. O pacto dos esquecidos.",
+            "instrucao_narrativa": "Arrisque um recurso para proteger um estranho da mesma classe social.",
+            "image": "assets/images/deck2/g11.webp"
+        },
+        {
+            "id": "g12",
+            "titulo": "Desprezo Tecnocrático",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "O sofrimento humano é apenas ruído estatístico. O mundo precisa de engenharia, não de empatia.",
+            "instrucao_narrativa": "Resolva um dilema tratando os envolvidos como variáveis numéricas.",
+            "image": "assets/images/deck2/g12.webp"
+        },
+        {
+            "id": "g13",
+            "titulo": "Tradicionalismo de Ruína",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Desejo de reconstruir velhas hierarquias sobre os escombros. A ordem antiga era perfeita por ser ordem.",
+            "instrucao_narrativa": "Insista em um protocolo social que não faz mais sentido no contexto.",
+            "image": "assets/images/deck2/g13.webp"
+        },
+        {
+            "id": "g14",
+            "titulo": "Ética da Ruptura",
+            "arquetipo_vinculado": "protagonista",
+            "descricao": "Nenhuma reforma é possível. A única moralidade aceitável é o colapso total da estrutura atual.",
+            "instrucao_narrativa": "Cometa um ato de sabotagem justificando-o como necessidade revolucionária.",
+            "image": "assets/images/deck2/g14.webp"
+        },
+        {
+            "id": "g15",
+            "titulo": "Justiça Restaurativa",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "A punição é violência sistêmica. O foco é a cura do tecido social e a reparação do dano.",
+            "instrucao_narrativa": "Proponha uma forma de reparação comunitária em vez de revidar agressão.",
+            "image": "assets/images/deck2/g15.webp"
+        },
+        {
+            "id": "g16",
+            "titulo": "Materialismo das Sombras",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "Objetos carregam a história das mãos que os fizeram. Suor e tempo capturados em forma física.",
+            "instrucao_narrativa": "Descreva um item focando no processo exaustivo de sua criação.",
+            "image": "assets/images/deck2/g16.webp"
+        },
+        {
+            "id": "g17",
+            "titulo": "Utopia da Escassez",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "A beleza encontrada na falta. Liberdade só floresce quando não há nada a possuir.",
+            "instrucao_narrativa": "Escreva uma cena onde a ausência de um recurso aproxima inimigos.",
+            "image": "assets/images/deck2/g17.webp"
+        },
+        {
+            "id": "g18",
+            "titulo": "Dívida do Nome",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "O peso dos crimes passados. O herdeiro do privilégio ou da desgraça de atos antigos.",
+            "instrucao_narrativa": "O protagonista é confrontado por alguém que sofreu com atos de seus antepassados.",
+            "image": "assets/images/deck2/g18.webp"
+        },
+        {
+            "id": "g19",
+            "titulo": "Soberania do Concreto",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "A cidade é a única entidade que importa. O asfalto dita a moralidade e a sobrevivência.",
+            "instrucao_narrativa": "Trate um elemento urbano como se fosse uma divindade exigindo obediência.",
+            "image": "assets/images/deck2/g19.webp"
+        },
+        {
+            "id": "g20",
+            "titulo": "Fetiche da Ordem",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Medo paralisante do caos. Qualquer violência é justificável para manter a ilusão de controle.",
+            "instrucao_narrativa": "Defenda uma injustiça óbvia apenas para evitar que um conflito maior se inicie.",
+            "image": "assets/images/deck2/g20.webp"
+        },
+        {
+            "id": "g21",
+            "titulo": "Individualismo do Naufrágio",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "Lógica do bote salva-vidas. O direito de garantir o próprio lugar custe o que custar.",
+            "instrucao_narrativa": "Traia um aliado para garantir uma vantagem de sobrevivência imediata.",
+            "image": "assets/images/deck2/g21.webp"
+        },
+        {
+            "id": "g22",
+            "titulo": "Eco do Levante",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "A lembrança de uma revolta que falhou, mas cujas cinzas ainda inspiram esperança e medo.",
+            "instrucao_narrativa": "Introduza um símbolo de resistência antiga que mude a disposição dos personagens.",
+            "image": "assets/images/deck2/g22.webp"
+        },
+        {
+            "id": "g23",
+            "titulo": "Hierarquia Biológica",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "Crença de que alguns nasceram para servir. Naturalização da desigualdade através da carne.",
+            "instrucao_narrativa": "Um personagem superior deve tratar o protagonista com condescendência naturalista.",
+            "image": "assets/images/deck2/g23.webp"
+        },
+        {
+            "id": "g24",
+            "titulo": "Ética do Armengue",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "Resistência através da subversão técnica. Usar ferramentas contra o propósito original do sistema.",
+            "instrucao_narrativa": "Resolva um problema usando tecnologia de forma proibida ou imprevista.",
+            "image": "assets/images/deck2/g24.webp"
+        },
+        {
+            "id": "g25",
+            "titulo": "Niilismo de Mercado",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Nada tem valor intrínseco, apenas preço. Se algo não pode ser vendido, não existe na realidade.",
+            "instrucao_narrativa": "O personagem deve precificar um sentimento humano durante negociação.",
+            "image": "assets/images/deck2/g25.webp"
+        },
+        {
+            "id": "g26",
+            "titulo": "Recipiente Comum",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "Triunfo da persistência coletiva sobre o heroísmo individual. O que mantemos na sacola importa mais.",
+            "instrucao_narrativa": "A cena termina com o protagonista organizando a partilha de um recurso vital.",
+            "image": "assets/images/deck2/g26.webp"
+        }
+    ],
+    "deck_tecido_mundo": [
+        {
+            "id": "t01",
+            "titulo": "Sacola do Coletor",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "A história foca no que sustenta a vida (comida, dados, remédios) em vez da arma que destrói.",
+            "instrucao_narrativa": "Resolva um conflito através da partilha de um recurso básico.",
+            "image": "assets/images/deck3/t01.webp"
+        },
+        {
+            "id": "t02",
+            "titulo": "Arquitetura da Opressão",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "O ambiente urbano desenhado para excluir corpos e facilitar a vigilância. A cidade como inimigo físico.",
+            "instrucao_narrativa": "Descreva como o design do prédio dificulta a ação do protagonista.",
+            "image": "assets/images/deck3/t02.webp"
+        },
+        {
+            "id": "t03",
+            "titulo": "Nome Verdadeiro",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "A cidade reage ao humor dos personagens. Há uma conexão biológica entre o cenário e a psiquê.",
+            "instrucao_narrativa": "Insira uma mudança climática que reflita o estado interno do protagonista.",
+            "image": "assets/images/deck3/t03.webp"
+        },
+        {
+            "id": "t04",
+            "titulo": "Hospitalidade",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Código social antigo que obriga estranhos a se ajudarem, mesmo sob tensão extrema.",
+            "instrucao_narrativa": "O protagonista encontra abrigo improvável, mas deve seguir regra de conduta rigorosa.",
+            "image": "assets/images/deck3/t04.webp"
+        },
+        {
+            "id": "t05",
+            "titulo": "Infraestrutura Invisível",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Foco nos trabalhadores que mantêm o mundo funcionando no anonimato (manutenção, esgoto).",
+            "instrucao_narrativa": "Uma informação crucial é obtida através de alguém que seria ignorado pelo sistema.",
+            "image": "assets/images/deck3/t05.webp"
+        },
+        {
+            "id": "t06",
+            "titulo": "Metabolismo Urbano",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "A cidade como organismo vivo que respira e gera resíduos. Ruídos biológicos nas engrenagens.",
+            "instrucao_narrativa": "Descreva os sons da cidade como se fossem batimentos ou digestão.",
+            "image": "assets/images/deck3/t06.webp"
+        },
+        {
+            "id": "t07",
+            "titulo": "Rituais de Passagem",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "Tradição local que define quem pertence ao grupo. O teste simbólico de fidelidade.",
+            "instrucao_narrativa": "O protagonista deve passar por um teste físico ou simbólico para ganhar confiança.",
+            "image": "assets/images/deck3/t07.webp"
+        },
+        {
+            "id": "t08",
+            "titulo": "Memória do Solo",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "O local foi palco de um trauma histórico que ainda ressoa. O passado interfere na coragem.",
+            "instrucao_narrativa": "Descreva como o peso do passado no local dificulta a ação presente.",
+            "image": "assets/images/deck3/t08.webp"
+        },
+        {
+            "id": "t09",
+            "titulo": "Simbiose Forçada",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Grupos diferentes que dependem um do outro para sobreviver, mesmo em conflito ideológico.",
+            "instrucao_narrativa": "Escreva uma cooperação tensa dependente de habilidades complementares.",
+            "image": "assets/images/deck3/t09.webp"
+        },
+        {
+            "id": "t10",
+            "titulo": "Mercado de Ideias",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "Espaço onde informações proibidas são trocadas como mercadoria. O valor do imaterial.",
+            "instrucao_narrativa": "Negocie algo imaterial (segredo ou memória) em troca de um item físico.",
+            "image": "assets/images/deck3/t10.webp"
+        },
+        {
+            "id": "t11",
+            "titulo": "Barreira Biológica",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Contaminação ou mutação que isola uma área. O ambiente que o corpo não habita sem proteção.",
+            "instrucao_narrativa": "O obstáculo é um ambiente hostil à biologia humana.",
+            "image": "assets/images/deck3/t11.webp"
+        },
+        {
+            "id": "t12",
+            "titulo": "Idioma das Ruas",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Códigos visuais e dialetos que só os iniciados entendem. O isolamento social do estrangeiro.",
+            "instrucao_narrativa": "O protagonista falha em entender uma mensagem óbvia para os locais.",
+            "image": "assets/images/deck3/t12.webp"
+        },
+        {
+            "id": "t13",
+            "titulo": "Sacralidade do Lixo",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "O que o sistema descarta torna-se recurso vital para os esquecidos. Valor espiritual no detrito.",
+            "instrucao_narrativa": "Dê um valor imenso a algo que o sistema considera lixo.",
+            "image": "assets/images/deck3/t13.webp"
+        },
+        {
+            "id": "t14",
+            "titulo": "Frio Estatístico",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "O peso dos censos e dívidas. Números que definem o direito à existência física.",
+            "instrucao_narrativa": "Introduza decisão burocrática que afeta milhares de forma impessoal.",
+            "image": "assets/images/deck3/t14.webp"
+        },
+        {
+            "id": "t15",
+            "titulo": "Eco da Revolta",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "Monumentos derrubados ou hinos proibidos que mantêm a chama da resistência viva.",
+            "instrucao_narrativa": "Um símbolo de resistência antiga inspira o protagonista em momento de desistência.",
+            "image": "assets/images/deck3/t15.webp"
+        },
+        {
+            "id": "t16",
+            "titulo": "Estética da Ruína",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "A natureza retomando o concreto. Beleza encontrada no que está quebrado e abandonado.",
+            "instrucao_narrativa": "Descreva local decadente com reverência artística sublime.",
+            "image": "assets/images/deck3/t16.webp"
+        },
+        {
+            "id": "t17",
+            "titulo": "Pacto de Silêncio",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Comunidade que se protege escondendo verdades de autoridades. O silêncio como barreira.",
+            "instrucao_narrativa": "Ninguém responde ao protagonista; o silêncio coletivo é o maior obstáculo.",
+            "image": "assets/images/deck3/t17.webp"
+        },
+        {
+            "id": "t18",
+            "titulo": "Fluxo Migratório",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "A chegada ou partida em massa mudando a dinâmica. O indivíduo perdido na corrente.",
+            "instrucao_narrativa": "Use movimento de multidão para separar aliados ou forçar encontro.",
+            "image": "assets/images/deck3/t18.webp"
+        },
+        {
+            "id": "t19",
+            "titulo": "Obsoletismo Ativo",
+            "arquetipo_vinculado": "Aliado",
+            "descricao": "Ferramentas do passado que o sistema moderno não rastreia. A segurança do analógico.",
+            "instrucao_narrativa": "Use algo antigo para superar vigilância digital de alta tecnologia.",
+            "image": "assets/images/deck3/t19.webp"
+        },
+        {
+            "id": "t20",
+            "titulo": "Tabu Alimentar",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Regras sobre consumo que definem o pertencimento. O ato de comer como diplomacia.",
+            "instrucao_narrativa": "O ato de compartilhar (ou recusar) alimento torna-se ponto central do conflito.",
+            "image": "assets/images/deck3/t20.webp"
+        },
+        {
+            "id": "t21",
+            "titulo": "Religião Mecânica",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "Adoração da tecnologia como divina e incompreensível. Fervor contra lógica.",
+            "instrucao_narrativa": "Personagem trata máquina com fervor religioso, impedindo reparos lógicos.",
+            "image": "assets/images/deck3/t21.webp"
+        },
+        {
+            "id": "t22",
+            "titulo": "Clima Eletrizado",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Tensão social prestes a explodir. Pequenos erros podem desencadear revolta popular.",
+            "instrucao_narrativa": "Qualquer erro de etiqueta na cena pode causar uma revolta imediata.",
+            "image": "assets/images/deck3/t22.webp"
+        },
+        {
+            "id": "t23",
+            "titulo": "Justiça de Fronteira",
+            "arquetipo_vinculado": "protagonista",
+            "descricao": "Justiça feita pelas mãos da comunidade na ausência do Estado. Consciência vs Pressão.",
+            "instrucao_narrativa": "O protagonista deve julgar alguém baseando-se apenas na moral local.",
+            "image": "assets/images/deck3/t23.webp"
+        },
+        {
+            "id": "t24",
+            "titulo": "Parasitismo",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Grupos que vivem dentro de outros sem serem notados. O mundo nas brechas da rotina.",
+            "instrucao_narrativa": "Revele mundo escondido que existe nas frestas da vida cotidiana.",
+            "image": "assets/images/deck3/t24.webp"
+        },
+        {
+            "id": "t25",
+            "titulo": "Ritmo de Trabalho",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "Cantos e ritmos que coordenam o esforço coletivo. A cadência que mantém a sanidade.",
+            "instrucao_narrativa": "Use som repetitivo do ambiente para ditar a urgência da cena.",
+            "image": "assets/images/deck3/t25.webp"
+        },
+        {
+            "id": "t26",
+            "titulo": "Equilíbrio",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "Conclusão de que a paz depende da partilha justa. O triunfo da sacola sobre a lança.",
+            "instrucao_narrativa": "O conflito termina com acordo de compartilhamento de recurso limitado.",
+            "image": "assets/images/deck3/t26.webp"
+        }
+    ],
+    "deck_rupturas_percurso": [
+        {
+            "id": "r01",
+            "titulo": "Aliança Incômoda",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Um inimigo torna-se o único caminho para a sobrevivência. Necessidade acima do nojo.",
+            "instrucao_narrativa": "Force o protagonista a colaborar com quem ele mais despreza.",
+            "image": "assets/images/deck4/r01.webp"
+        },
+        {
+            "id": "r02",
+            "titulo": "Conteúdo Derramado",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "O recurso que unia o grupo é perdido. Como se reorganizar no vazio do que era essencial.",
+            "instrucao_narrativa": "A história deixa de ser sobre a meta e passa a ser sobre a carência.",
+            "image": "assets/images/deck4/r02.webp"
+        },
+        {
+            "id": "r03",
+            "titulo": "Greve da Realidade",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Colapso na infraestrutura impede o movimento planejado. O bloqueio físico exige rota simbólica.",
+            "instrucao_narrativa": "O progresso físico está barrado; encontre solução metafórica.",
+            "image": "assets/images/deck4/r03.webp"
+        },
+        {
+            "id": "r04",
+            "titulo": "Segredo do Mentor",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "Revelação de que a autoridade cometeu o erro que condena. A bússola moral quebra.",
+            "instrucao_narrativa": "Decida se perdoa a autoridade falha ou se torna seu juiz.",
+            "image": "assets/images/deck4/r04.webp"
+        },
+        {
+            "id": "r05",
+            "titulo": "Invasão do Estranho",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Elemento inexplicável surge em situação comum, invalidando a lógica da discussão.",
+            "instrucao_narrativa": "Introduza anomalia física que mude o foco da cena.",
+            "image": "assets/images/deck4/r05.webp"
+        },
+        {
+            "id": "r06",
+            "titulo": "Colapso Interno",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "A voz da razão falha, substituída por pânico ou trauma. Ação baseada puramente no impulso.",
+            "instrucao_narrativa": "O personagem perde a lógica e age por puro instinto de sobrevivência.",
+            "image": "assets/images/deck4/r06.webp"
+        },
+        {
+            "id": "r07",
+            "titulo": "Lei que Mudou",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Nova burocracia torna o objetivo ilegal. O trabalho torna-se crime num piscar de olhos.",
+            "instrucao_narrativa": "O personagem deve decidir se continua a missão como fora-da-lei.",
+            "image": "assets/images/deck4/r07.webp"
+        },
+        {
+            "id": "r08",
+            "titulo": "Objeto Fetiche",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "Item insignificante revela-se chave para conspiração. Foco no detalhe material ignorado.",
+            "instrucao_narrativa": "Mude o foco da cena para um objeto que todos negligenciaram.",
+            "image": "assets/images/deck4/r08.webp"
+        },
+        {
+            "id": "r09",
+            "titulo": "Despertar",
+            "arquetipo_vinculado": "protagonista",
+            "descricao": "Personagem percebe que é ferramenta de opressão. Sabotagem da própria missão por princípios.",
+            "instrucao_narrativa": "O protagonista sabota o próprio plano por consciência moral súbita.",
+            "image": "assets/images/deck4/r09.webp"
+        },
+        {
+            "id": "r10",
+            "titulo": "Traição de Classe",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Aliado sobe de hierarquia e abandona o grupo. O confronto entre o fosso e a torre.",
+            "instrucao_narrativa": "Escreva o embate entre quem ficou e quem ascendeu traindo os seus.",
+            "image": "assets/images/deck4/r10.webp"
+        },
+        {
+            "id": "r11",
+            "titulo": "Vácuo de Poder",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Antagonista é removido subitamente. O ódio se vira para dentro do próprio grupo.",
+            "instrucao_narrativa": "Sem o vilão, o grupo começa a brigar internamente pelo controle.",
+            "image": "assets/images/deck4/r11.webp"
+        },
+        {
+            "id": "r12",
+            "titulo": "Natureza Reclama",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Evento climático força suspensão de hostilidades humanas. O ambiente é o novo juiz.",
+            "instrucao_narrativa": "Inimigos devem colaborar para sobreviver a desastre natural.",
+            "image": "assets/images/deck4/r12.webp"
+        },
+        {
+            "id": "r13",
+            "titulo": "Erro no Arquivo",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "Informação base da história era mentira. Perseguir a pessoa errada no lugar errado.",
+            "instrucao_narrativa": "Revele que o objetivo central foi baseado em um erro técnico.",
+            "image": "assets/images/deck4/r13.webp"
+        },
+        {
+            "id": "r14",
+            "titulo": "Julgamento",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "protagonista julgado por comunidade que o observava. Justificar ações diante de estranhos.",
+            "instrucao_narrativa": "Justifique a moral do protagonista diante de um coletivo que o vigia.",
+            "image": "assets/images/deck4/r14.webp"
+        },
+        {
+            "id": "r15",
+            "titulo": "Retorno",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Alguém apagado da história retorna com verdade inconveniente que invalida vitórias.",
+            "instrucao_narrativa": "O retorno de um exilado desestabiliza o poder atual do protagonista.",
+            "image": "assets/images/deck4/r15.webp"
+        },
+        {
+            "id": "r16",
+            "titulo": "Pane Técnica",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Ferramenta principal quebra no pior momento. Quem é o protagonista sem seu prolongamento?",
+            "instrucao_narrativa": "O protagonista deve agir sem sua arma ou ferramenta tecnológica básica.",
+            "image": "assets/images/deck4/r16.webp"
+        },
+        {
+            "id": "r17",
+            "titulo": "Sacrifício",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "Inocente esmagado por objetivo nobre. A vitória que tem gosto amargo de derrota.",
+            "instrucao_narrativa": "Ganhe a cena, mas perca a paz moral devido a um efeito colateral.",
+            "image": "assets/images/deck4/r17.webp"
+        },
+        {
+            "id": "r18",
+            "titulo": "Inversão",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Mestre torna-se dependente e aprendiz assume rédeas. Mudança na dinâmica de autoridade.",
+            "instrucao_narrativa": "O personagem mais fraco agora detém o recurso necessário.",
+            "image": "assets/images/deck4/r18.webp"
+        },
+        {
+            "id": "r19",
+            "titulo": "Revelação",
+            "arquetipo_vinculado": "Arauto",
+            "descricao": "Personagem cenário revela-se arquiteto da situação. O coadjuvante vira protagonista.",
+            "instrucao_narrativa": "Alguém ignorado revela sua verdadeira importância na trama.",
+            "image": "assets/images/deck4/r19.webp"
+        },
+        {
+            "id": "r20",
+            "titulo": "Praga",
+            "arquetipo_vinculado": "Guardião",
+            "descricao": "Contágio ideológico muda comportamento das massas. Perigo invisível em qualquer pessoa.",
+            "instrucao_narrativa": "Instale a paranoia: qualquer pessoa pode ser o inimigo infiltrado.",
+            "image": "assets/images/deck4/r20.webp"
+        },
+        {
+            "id": "r21",
+            "titulo": "Fardo",
+            "arquetipo_vinculado": "Pícaro",
+            "descricao": "Receber o que pediu e descobrir que não pode pagar as consequências. O desejo realizado.",
+            "instrucao_narrativa": "O protagonista obtém o que queria, mas isso cria um problema maior.",
+            "image": "assets/images/deck4/r21.webp"
+        },
+        {
+            "id": "r22",
+            "titulo": "Mutação",
+            "arquetipo_vinculado": "Camaleão",
+            "descricao": "Corpo começa a falhar ou mudar de forma. Perda de controle sobre a própria carne.",
+            "instrucao_narrativa": "O conflito principal torna-se a integridade física do próprio protagonista.",
+            "image": "assets/images/deck4/r22.webp"
+        },
+        {
+            "id": "r23",
+            "titulo": "Abundância",
+            "arquetipo_vinculado": "Mentor",
+            "descricao": "Recurso raro torna-se comum, destruindo economia local. Novo conflito por propósito.",
+            "instrucao_narrativa": "A falta de conflito material gera um conflito existencial imediato.",
+            "image": "assets/images/deck4/r23.webp"
+        },
+        {
+            "id": "r24",
+            "titulo": "Mensagem",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "Ordem corrompida gera desastre. Agir baseado em má interpretação de comandos.",
+            "instrucao_narrativa": "Crie um desastre causado por uma comunicação falha entre aliados.",
+            "image": "assets/images/deck4/r24.webp"
+        },
+        {
+            "id": "r25",
+            "titulo": "Espelho",
+            "arquetipo_vinculado": "Sombra",
+            "descricao": "protagonista e vilão são idênticos, exceto por detalhe trivial. Diálogo sobre moralidade.",
+            "instrucao_narrativa": "O protagonista deve confrontar suas semelhanças com o seu antagonista.",
+            "image": "assets/images/deck4/r25.webp"
+        },
+        {
+            "id": "r26",
+            "titulo": "Recipiente Final",
+            "arquetipo_vinculado": "Recipiente",
+            "descricao": "A história termina criando lugar seguro, não com vitória. Proteger o que restou.",
+            "instrucao_narrativa": "O foco muda para a preservação do coletivo e do futuro.",
+            "image": "assets/images/deck4/r26.webp"
+        }
+    ]
+}
